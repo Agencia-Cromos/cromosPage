@@ -2,17 +2,34 @@ import styled from "styled-components";
 
 export const StyleProjectsList = styled.ul`
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  flex-direction: row;
   gap: 30px;
+  overflow-x: scroll;
+  padding: 20px !important;
+  margin: 0;
+  list-style-type: none;
+
+  &::-webkit-scrollbar {
+    height: 15px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: var(--color-primary-50);
+  }
+
+  &::-webkit-scrollbar-track {
+    background-color: var(--grey-4);
+    border-radius: 10px;
+  }
+
 
   li {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 15px;
+    gap: 10px;
     margin-top: 20px;
-    max-width: 270px;
+    min-width: 350px;
     border: 2px solid var(--grey-2);
     border-radius: 10px;
     padding: 15px 30px;
@@ -38,50 +55,42 @@ export const StyleProjectsList = styled.ul`
     }
 
     .description {
-      color: var(--grey-1-75);
-      height: 100px;
-      overflow-y: hidden;
-      text-overflow: ellipsis;
-      display: -webkit-box;
-      -webkit-box-orient: vertical;
-      -webkit-line-clamp: 3;
-      position: relative;
 
-      &:hover {
-        overflow-y: auto;
-
-        &::-webkit-scrollbar {
-          width: 3px;
-        }
-
-        &::-webkit-scrollbar-thumb {
-          background-color: var(--grey-3);
-          border-radius: 10px;
-        }
-
-        &::-webkit-scrollbar-track {
-          background-color: var(--grey-2);
-          border-radius: 10px;
-        }
+      p{
+        color: var(--grey-1-75);
+        height: 100px;
+        overflow-y: hidden;
+        position: relative;
+  
+        &:hover {
+          overflow-y: auto;
+  
+          &::-webkit-scrollbar {
+            width: 3px;
+          }
+  
+          &::-webkit-scrollbar-thumb {
+            background-color: var(--grey-3);
+            border-radius: 10px;
+          }
+  
+          &::-webkit-scrollbar-track {
+            background-color: var(--grey-2);
+            border-radius: 10px;
+          }
+        
+      }
       }
     }
 
-    .links {
-      display: flex;
-      justify-content: space-between;
-      gap: 20px;
 
-      a {
-        display: flex;
-        align-items: center;
-        gap: 10px;
-        margin-top: 10px;
-        text-decoration: none;
-        color: var(--grey-3);
+    figure{
+      height: 300px;
+      width: 300px;
 
-        &:hover {
-          transform: scale(1.1);
-        }
+      img{
+        height: 100%;
+        width: 100%;
       }
     }
   }

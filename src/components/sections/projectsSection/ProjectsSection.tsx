@@ -8,13 +8,13 @@ export function ProjectsSection() {
         <StyleProjectsSection id="projects">
             <PageContainer>
                 <div className="mainInfos">
-                    <h3>My Main Projects</h3>
-                    <p>Projects created at <span>Kenzie Academy</span></p>    
-                </div>
-                <div className="projects">
-                    <ProjectsList /> 
+                    <h3>Principais projetos</h3>
+                    <p>ALguns desses projetos ainda estão em <span>dsenvolvimento</span></p>    
                 </div>
             </PageContainer>
+            <div className="projects">
+                <ProjectsList />
+            </div>
         </StyleProjectsSection>
     )
 }

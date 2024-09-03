@@ -1,4 +1,4 @@
-import { StyleHeaderContainer } from './StyleHeaderContainer'
+import { StyleHeaderContainer } from './StyleSecundaryContainer'
 import { TiThMenu } from 'react-icons/ti'
 import { FaTimes } from 'react-icons/fa'
 import { Menu } from '../../menu/Menu'

@@ -1,14 +1,14 @@
 import styled from "styled-components";
 
 export const StyleMessageHome = styled.section`
-    margin: 30vh auto;
-    padding: 20px; 
+    margin: 30vh auto !important;
+    padding: 20px !important; 
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 20px;
-    border: 2px solid var(--color-primary);
+    border: 2px solid var(--color-primary-50);
     border-radius: 12px;
     
     div{
@@ -30,11 +30,19 @@ export const StyleMessageHome = styled.section`
         }
 
     }
-    button{
+
+    a{
+        display: flex;
+        justify-content: center;
+        align-items: center;
         height: 35px;
         width: 200px;
         background-color: transparent;
         color: var(--grey-1);
         border: 2px solid var(--color-tertiary);
+        border-radius: 10px;
+    }a:hover{
+        background-color: var(--color-tertiary);
+        color: var(--grey-1);
     }
 `

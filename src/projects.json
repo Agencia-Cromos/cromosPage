@@ -1,0 +1,54 @@
+[
+  {
+    "title": "Portfolio",
+    "layer": "front-end",
+    "description": "Um template de portfolio para devs focado em um funil de atenção poderoso.",
+    "technology": "JavaScript",
+    "code": "https://github.com/Kenzie-Academy-Brasil-Developers/Kenzie-Academy-Brasil-Developers-M1-Ecommerce.-Nataspitz",
+    "site": "https://kenzie-academy-brasil-developers.github.io/Kenzie-Academy-Brasil-Developers-M1-Ecommerce.-Nataspitz/",
+    "image": "Portfolio.png"
+  },
+  {
+    "title": "Kenzie Empresas",
+    "layer": "front-end",
+    "description": "A complete dashboard integrated into an API for managing employees and companies. Its objective is to have total control over the creation, hiring of employees and sectors, transforming boring and bureaucratic records into something lighter",
+    "technology": "JavaScript",
+    "code": "https://github.com/Kenzie-Academy-Brasil-Developers/Kenzie-Academy-Brasil-Developers-m2-projeto-Nataspitz",
+    "site": "https://kenzie-academy-brasil-developers.github.io/Kenzie-Academy-Brasil-Developers-m2-projeto-Nataspitz/",
+    "image": "Empresas.png"
+  },
+  {
+    "title": "Jobs",
+    "layer": "front-end",
+    "description": "Uma plataforma social para prgramadores e empresas com a possibilidade de extender suas promoções e buscas por vagas em desenvolvedores",
+    "technology": "React.js",
+    "code": "https://github.com/Kenzie-Academy-Brasil-Developers/https-github.com-Kenzie-Academy-Brasil-Developers-react-entrega-kenzie-hub-Nataspitz",
+    "site": "https://my-react-app-xi-six.vercel.app/",
+    "image": "jobs.png"
+  },
+  {
+    "title": "Profit System",
+    "layer": "Front end",
+    "description": "Um gerenciador empresarial compacto e completo para pequenos e médios negócios. Seu maior foco é facilitar toda o uso e gestão com poucos cliques.",
+    "technology": "React.js, Electron.js",
+    "code": "https://github.com/Kenzie-Academy-Brasil-Developers/m4-kimoveis_proj-final-Nataspitz",
+    "image": "Profit.png"
+  },
+  {
+    "title": "Cattálogo Inteligente",
+    "layer": "Front-end",
+    "description": "Um catalogo que destaca o melhor do produto com integração com inteligência artificial e messagens automaticas. Seu objetico e cobrir a demaqnda de clientes e fechar os melhores pedidos.",
+    "technology": "React.js, Express.js",
+    "code": "https://github.com/Nataspitz/M5-Peojeto-Final-Kanvas-Nataspitz",
+    "image": "Catalago.png"
+  },
+  {
+    "title": "Kenzie Contacts",
+    "layer": "front-end",
+    "description": "Um gerenciador de dados robusto com automação de contatos e lista de leads podendo ser integrada a qualquer sistema de email marketing.",
+    "technology": "Next.js, Express.js",
+    "code": "https://github.com/Kenzie-Academy-Brasil-Developers/M6-tech1-projeto-full-stack-Nataspitz",
+    "site": "https://m6-tech1-projeto-full-stack-nataspitz-nataspitz-kenzie.vercel.app/",
+    "image": "Contacts.png"
+  }
+]

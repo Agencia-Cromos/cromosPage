@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 export const StyleProjectsSection = styled.section`
     background-color: var(--grey-5);
-    padding: 30px 0 !important;
+    padding-top: 30px !important;
 
     .mainInfos{
         display: flex;
@@ -21,5 +21,10 @@ export const StyleProjectsSection = styled.section`
                 color: var(--color-tertiary);
             }
         }
+    }
+
+    .projects{
+        margin-top: 30px;
+        width: 100%;
     }
 `

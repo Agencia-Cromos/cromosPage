@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { HeaderContainer } from "../../components/containers/headerContainer/HeaderContainer";
+import { HeaderContainer } from "../../components/containers/HeaderContainer/HeaderContainer";
 import { Menu } from "../../components/menu/Menu";
 import { useTransition, animated, config } from "react-spring";
 
