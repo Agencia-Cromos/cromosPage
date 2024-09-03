@@ -38,15 +38,16 @@ export const StyledTechList = styled.div`
       display: flex;
       flex-direction: column;
       align-items: center;
+      gap: 10px;
       min-width: 100px;
       width: 50px;
       border-radius: 20px;
       padding: 10px;
       background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5));
 
-      svg {
-        width: 50px;
-        height: 50px;
+      img {
+        width: 50px !important;
+        height: 50px !important;
         color: var(--grey-3);
       }
 
