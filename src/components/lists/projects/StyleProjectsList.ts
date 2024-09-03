@@ -38,7 +38,7 @@ export const StyleProjectsList = styled.ul`
       display: flex;
       align-items: center;
       gap: 20px;
-      width: 30%;
+      width: 75%;
 
       p {
         color: var(--grey-3);
