@@ -9,7 +9,7 @@ export function ProjectsSection() {
             <PageContainer>
                 <div className="mainInfos">
                     <h3>Principais projetos</h3>
-                    <p>ALguns desses projetos ainda estão em <span>dsenvolvimento</span></p>    
+                    <p>Alguns desses projetos ainda estão em <span>desenvolvimento</span></p>    
                 </div>
             </PageContainer>
             <div className="projects">
