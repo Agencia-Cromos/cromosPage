@@ -22,7 +22,7 @@ const projects = [
   {
     title: "Kenzie Empresas",
     layer: "front-end",
-    description: "A complete dashboard integrated into an API for managing employees and companies.",
+    description: "Gestão de RH multiempresarial para adequar os profissionais e suas áreas de atuação.",
     technology: "JavaScript",
     code: "https://github.com/Kenzie-Academy-Brasil-Developers/Kenzie-Academy-Brasil-Developers-m2-projeto-Nataspitz",
     site: "https://kenzie-academy-brasil-developers.github.io/Kenzie-Academy-Brasil-Developers-m2-projeto-Nataspitz/",
