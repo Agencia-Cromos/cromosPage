@@ -1,7 +1,7 @@
 import { useState } from 'react';
-import { HeaderContainer } from "../../components/containers/HeaderContainer/HeaderContainer";
 import { Menu } from "../../components/menu/Menu";
 import { useTransition, animated, config } from "react-spring";
+import { HeaderContainer } from '../../components/containers/headerContainer/HeaderContainer';
 
 export function Header() {
   const [openMenu, setOpenMenu] = useState(false);

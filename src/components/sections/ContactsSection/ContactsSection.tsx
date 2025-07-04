@@ -1,7 +1,7 @@
 import { StyleContactsSection } from "./StyleContactsSection";
-import phone from "../../../assets/phone.png";
-import mail from "../../../assets/mail.png";
-import linkedin from "../../../assets/media.png";
+import phone from "../../../assets/icons/phone.png";
+import mail from "../../../assets/icons/mail.png";
+import linkedin from "../../../assets/icons/media.png";
 
 export function ContactsSection() {
   return (

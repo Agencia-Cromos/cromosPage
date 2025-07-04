@@ -1,8 +1,8 @@
 import { StyleFooterSection } from "./StylFooterSection";
 import perfil from "../../../assets/perfil.png";
-import facebook from "../../../assets/Facebook.png";
-import instagram from "../../../assets/Instagram.png";
-import linkedin from "../../../assets/Linkedin.png";
+import facebook from "../../../assets/icons/Facebook.png";
+import instagram from "../../../assets/icons/Instagram.png";
+import linkedin from "../../../assets/icons/Linkedin.png";
 import { StyleFooterContainer } from "../../containers/footerContainer/StyleFooterContainer";
 
 export function FooterSection() {

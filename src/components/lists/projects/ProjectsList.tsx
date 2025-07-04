@@ -1,70 +1,71 @@
 import { StyleProjectsList } from "./StyleProjectsList";
+import Catalogo from "../../../assets/projects/Catalogo.png";
+import PsyIa from "../../../assets/projects/PsyIa.png";
+import Profit from "../../../assets/projects/Profit.png";
+import SistemaCartorio from "../../../assets/projects/SistemaCartorio.png";
+import VivaSaude from "../../../assets/projects/VivaSaude.png";
+import Portfolio from "../../../assets/projects/Portfolio.png";
+import AppCartorio from "../../../assets/projects/AppCartorio.png";
 
-// Importações diretas das imagens
-import Contacts from "../../../assets/Contacts.png";
-import Catalogo from "../../../assets/Catalogo.png";
-import Profit from "../../../assets/Profit.png";
-import Portfolio from "../../../assets/Portfolio.png";
-import Empresas from "../../../assets/Empresas.png";
-import Jobs from "../../../assets/Jobs.png";
 
-// Objeto nativo de JavaScript contendo os dados dos projetos
 const projects = [
   {
     title: "Portfolio",
     layer: "front-end",
-    description: "Um template de portfolio para devs focado em um funil de atenção poderoso.",
-    technology: "JavaScript",
-    code: "https://github.com/Kenzie-Academy-Brasil-Developers/Kenzie-Academy-Brasil-Developers-M1-Ecommerce.-Nataspitz",
-    site: "https://kenzie-academy-brasil-developers.github.io/Kenzie-Academy-Brasil-Developers-M1-Ecommerce.-Nataspitz/",
-    image: Portfolio, // Imagem importada diretamente
+    description: "Template de portfólio pessoal com foco em storytelling, funil de atenção e apresentação estratégica de projetos reais.",
+    technology: "Next.js, TypeScript, Chakra UI",
+    site: "https://agenciacromos.com.br/nataspitz",
+    code: "https://github.com/Nataspitz/portfolio-nataspitz", 
+    image: Portfolio, 
   },
   {
-    title: "Kenzie Empresas",
+    title: "Viva Saúde",
     layer: "front-end",
-    description: "Gestão de RH multiempresarial para adequar os profissionais e suas áreas de atuação.",
-    technology: "JavaScript",
-    code: "https://github.com/Kenzie-Academy-Brasil-Developers/Kenzie-Academy-Brasil-Developers-m2-projeto-Nataspitz",
-    site: "https://kenzie-academy-brasil-developers.github.io/Kenzie-Academy-Brasil-Developers-m2-projeto-Nataspitz/",
-    image: Empresas, // Imagem importada diretamente
+    description: "Site institucional para evento comunitário com foco em SEO, captação de patrocinadores e storytelling visual.",
+    technology: "Next.js, Chakra UI, React Hook Form, Vercel",
+    site: "https://viva-nine.vercel.app/",
+    image: VivaSaude,
   },
   {
-    title: "Jobs",
+    title: "App – Apostilamento na Palma da Mão",
+    layer: "mobile",
+    description: "Aplicativo oficial do Cartório 5º Ofício para acompanhar processos, enviar documentos, resolver pendências e interagir via chat.",
+    technology: "React Native, Expo",
+    site: "https://play.google.com/store/apps/details?id=br.com.appcartorio5df.apostilamento",
+    image: AppCartorio,
+  },
+  {
+    title: "Sistema Web – Cartório 5º Ofício",
     layer: "front-end",
-    description: "Uma plataforma social para prgramadores e empresas com a possibilidade de extender suas promoções e buscas por vagas em desenvolvedores",
-    technology: "React.js",
-    code: "https://github.com/Kenzie-Academy-Brasil-Developers/https-github.com-Kenzie-Academy-Brasil-Developers-react-entrega-kenzie-hub-Nataspitz",
-    site: "https://my-react-app-xi-six.vercel.app/",
-    image: Jobs, // Imagem importada diretamente
+    description: "Dashboard interativo com Kanban, controle financeiro, uploads, chat e gerenciamento de usuários, integrado ao app mobile.",
+    technology: "Next.js, Chakra UI, TypeScript",
+    image: SistemaCartorio,
+  },
+  {
+    title: "PSAI-A – Plataforma de Saúde com IA",
+    layer: "front-end",
+    description: "Interface para assistente de saúde mental com IA conversacional e voz, focado em empatia, UX emocional e fluidez.",
+    technology: "Next.js, Chakra UI",
+    image: PsyIa,
   },
   {
     title: "Profit System",
-    layer: "Front end",
-    description: "Um gerenciador empresarial compacto e completo para pequenos e medios negócios. Seu maior foco é facilitar toda o uso e gesto com poucos cliques",
+    layer: "front-end",
+    description: "Sistema compacto de gestão empresarial para PMEs com foco em simplicidade e automação.",
     technology: "React.js, Electron.js",
     code: "https://github.com/Kenzie-Academy-Brasil-Developers/m4-kimoveis_proj-final-Nataspitz",
-    image: Profit, // Imagem importada diretamente
+    image: Profit,
   },
   {
     title: "Cattálogo Inteligente",
-    layer: "Front-end",
-    description: "Um catalogo que destaca o melhor do produto com integração com inteligência artificial e messagens automaticas. Seu objetico e cobrir a demaqnda de clientes e fechar os melhores pedidos.",
-    technology: "React.js, Express.js",
-    code: "https://github.com/Nataspitz/M5-Peojeto-Final-Kanvas-Nataspitz",
-    image: Catalogo, // Imagem importada diretamente
-  },
-  {
-    title: "Kenzie Contacts",
     layer: "front-end",
-    description: "Um gerenciador de dados robusto com automação de contatdos e lista de leads podendo ser integrada a qualuqer sistema de email marketing.",
-    technology: "Next.js, Express.js",
-    code: "https://github.com/Kenzie-Academy-Brasil-Developers/M6-tech1-projeto-full-stack-Nataspitz",
-    site: "https://m6-tech1-projeto-full-stack-nataspitz-nataspitz-kenzie.vercel.app/",
-    image: Contacts, // Imagem importada diretamente
+    description: "Catálogo de produtos com IA, automação de mensagens e foco em conversão para delivery e e-commerce.",
+    technology: "React.js, Express.js",
+    image: Catalogo,
   },
 ];
 
-// Função para renderizar a lista de projetos
+
 export function ProjectsList() {
   return (
     <StyleProjectsList>

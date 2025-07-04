@@ -32,41 +32,43 @@ export function DescriptionArticle() {
         Vamos Transformar ideias em <span> soluções digitais </span> através de um site
       </h1>
       <div className="quote">
-        <p>
-          "Nos dias de hoje um negócio sem site é um negócio que trabalha de porta fechada, e um site mal feito
-          é um negocio que espanta cliente"
-        </p>
+        <div className="quote">
+          <p>
+            "A presença digital certa pode transformar qualquer negócio. 
+            Meu objetivo é criar sites que abram portas e conectem de verdade com o público."
+          </p>
+        </div>
         <cite>- Natã Spitz Alves</cite>
       </div>
-      <div 
+      <div
         className="aboutMe"
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
       >
         <div className="text">
           <p>
-            Transformar ideias em realidade digital é minha <span>paixão</span>. Com expertise em <span>React</span> e <span>Next.js</span>, 
-            e mais de dois anos de experiência, desenvolvo soluções que encantam e funcionam. Anos de estudo sobre <span>comportamento humano</span> me 
-            capacitam a criar interfaces que realmente ressoam com os usuários, 
+            Transformar ideias em realidade digital é minha <span>paixão</span>. Com expertise em <span>React</span> e <span>Next.js</span>,
+            e mais de dois anos de experiência, desenvolvo soluções que encantam e funcionam. Anos de estudo sobre <span>comportamento humano</span> me
+            capacitam a criar interfaces que realmente ressoam com os usuários,
             tornando cada interação significativa.
           </p>
           {transitions((style, item) =>
             item ? (
               <animated.div className="rest_text" style={style}>
                 <p>
-                  A combinação de <span>estética</span> e <span>funcionalidade</span> é essencial no desenvolvimento de sites e aplicativos. 
-                  Com profundo conhecimento em <span>design UX</span> e <span>UI</span>, e experiência em linguagem comportamental, construo 
-                  plataformas que são extensões vitais das marcas. Cada projeto é uma oportunidade de transformar 
+                  A combinação de <span>estética</span> e <span>funcionalidade</span> é essencial no desenvolvimento de sites e aplicativos.
+                  Com profundo conhecimento em <span>design UX</span> e <span>UI</span>, e experiência em linguagem comportamental, construo
+                  plataformas que são extensões vitais das marcas. Cada projeto é uma oportunidade de transformar
                   a presença online em um canal eficaz para engajar e converter.
                 </p>
                 <p>
-                  Trabalhando de perto com empresários, traduzo suas necessidades em <span>soluções digitais personalizadas</span>. 
-                  Minha experiência em <span>back-end</span> com <span>Python</span> e <span>Django</span> complementa a criação de interfaces atraentes, 
+                  Trabalhando de perto com empresários, traduzo suas necessidades em <span>soluções digitais personalizadas</span>.
+                  Minha experiência em <span>back-end</span> com <span>Python</span> e <span>Django</span> complementa a criação de interfaces atraentes,
                   garantindo que o produto final seja completo e funcional.
                 </p>
                 <p>
-                  Acredito que <span>estratégia</span> e <span>tecnologia</span> devem andar juntas. Meu compromisso é ajudar empresas a prosperarem 
-                  online, oferecendo habilidades técnicas e uma visão estratégica que impulsiona resultados duradouros. 
+                  Acredito que <span>estratégia</span> e <span>tecnologia</span> devem andar juntas. Meu compromisso é ajudar empresas a prosperarem
+                  online, oferecendo habilidades técnicas e uma visão estratégica que impulsiona resultados duradouros.
                   Com a abordagem certa, o <span>sucesso</span> é inevitável.
                 </p>
               </animated.div>

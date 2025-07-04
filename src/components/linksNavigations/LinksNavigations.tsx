@@ -1,5 +1,5 @@
 import { StyleLinksNavigations } from "./StyleLinksNavigations";
-import gitHub from "../../assets/Bt-Circle.png"
+import gitHub from "../../assets/icons/Bt-Circle.png"
 
 
 export function LinksNavigations() {
