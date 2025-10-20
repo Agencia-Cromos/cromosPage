@@ -53,10 +53,7 @@ export function ProjectSocialSection() {
   }, []);
 
   return (
-    <section className="relative overflow-hidden bg-bg-light py-28 sm:py-32">
-      <div className="pointer-events-none absolute inset-0 -z-10 bg-gradient-to-br from-white via-white to-[#E2E8F0]/40" />
-      <div className="pointer-events-none absolute -left-32 top-24 -z-10 h-64 w-64 rounded-full bg-[radial-gradient(circle_at_center,_rgba(59,130,246,0.18)_0%,_rgba(59,130,246,0)_70%)] blur-3xl" />
-      <div className="pointer-events-none absolute -right-20 bottom-12 -z-10 h-52 w-52 rounded-full bg-[radial-gradient(circle_at_center,_rgba(236,72,153,0.15)_0%,_rgba(236,72,153,0)_70%)] blur-3xl" />
+    <section id="ProjectSocialSection" className="relative overflow-hidden bg-bg-light py-28 sm:py-32">
       <div className="relative flex w-full flex-col gap-14 lg:grid lg:grid-cols-[minmax(0,60vw)_minmax(0,1fr)] lg:items-center">
         <div className="order-1 lg:order-none" style={fadeUp(0.1)}>
           <ProjectSocialIllustration />

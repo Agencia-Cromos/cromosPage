@@ -10,9 +10,9 @@ const PRINCIPLES: Principle[] = [
   {
     title: "Como trabalhamos",
     paragraphs: [
-      "Com verdade, escuta e presença.",
-      "Antes de qualquer linha de código, a gente mergulha no seu contexto — entende o que você vive, o que sonha e o que realmente importa agora.",
-      "Não criamos projetos, criamos sentido. Cada entrega nasce pra acompanhar o ritmo da sua história.",
+      "Com transparencia, escuta e presença.",
+      "Antes de qualquer linha de código, a gente mergulha no seu contexto — entende o que você vive, qual sua meta e o que realmente importa agora.",
+      "Não criamos projetos comuns, criamos sentido. Cada entrega nasce pra acompanhar o ritmo da sua história.",
     ],
   },
   {
@@ -40,7 +40,10 @@ const fadeUpStyle = (delay: number) => ({
 
 export function AboutSection() {
   return (
-    <section className="flex flex-col overflow-hidden bg-[color:var(--color-bg-light)] py-24 dark:bg-[color:var(--color-bg-dark)] sm:py-28 lg:py-32">
+    <section
+      id="AboutUsSection"
+      className="flex flex-col overflow-hidden bg-[color:var(--color-bg-light)] py-24 dark:bg-[color:var(--color-bg-dark)] sm:py-28 lg:py-32"
+    >
       <Container variant="full" className="flex flex-col items-center gap-16">
         <div className="flex max-w-3xl flex-col items-center gap-6 text-center">
           <span
@@ -53,15 +56,15 @@ export function AboutSection() {
             className="text-balance font-headline text-3xl text-gray-900 sm:text-4xl md:text-[3.2rem] md:leading-[1.05] dark:text-white"
             style={fadeUpStyle(0.1)}
           >
-            Relações que transformam tecnologia em resultado real
+            Nosso clientes transformam tecnologia em resultado real
           </h2>
           <p
             className="text-pretty font-sans text-base text-gray-500 sm:text-lg dark:text-[color:var(--color-gray-400)]"
             style={fadeUpStyle(0.2)}
           >
-            Na CROMOS, cada projeto nasce da empatia. A gente entende o que o
-            cliente vive e, só então, cria soluções sob medida que realmente
-            resolvem.
+            Na CROMOS, cada projeto nasce de conexão. A gente entende o que o
+            cliente sabe e, só então, criamos soluções sob medida que realmente
+            resolvem seus problemas.
           </p>
         </div>
 

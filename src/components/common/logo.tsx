@@ -1,7 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
 
-import logo from "@/assets/logo_dark.png";
 
 type LogoProps = {
   className?: string;
@@ -26,7 +25,7 @@ export function Logo({
         className={`relative inline-flex h-full items-center justify-center ${wrapperClasses}`}
       >
         <Image
-          src={logo}
+          src="/logo_dark.png"
           alt="CROMOS"
           fill
           priority={priority}

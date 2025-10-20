@@ -4,15 +4,16 @@ import earthBg from "@/assets/earth_bg.png";
 export function HeroVisual() {
   return (
     <div className="pointer-events-none absolute inset-0 right-0 z-0 overflow-hidden">
-      <div className="relative h-full w-full opacity-70 sm:opacity-80 lg:hidden">
+      <div className="relative h-full w-full lg:hidden">
         <Image
           src={earthBg}
           alt="Planeta conectado"
           fill
           priority
           sizes="100vw"
-          className="object-cover object-center"
+          className="object-cover object-center brightness-[0.58]"
         />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,_rgba(10,18,32,0.72),_rgba(6,12,26,0.5))]" />
       </div>
       <div className="pointer-events-auto group absolute inset-y-0 right-0 hidden h-full w-[80vw] max-w-[1040px] items-center justify-end lg:flex">
         <div className="absolute inset-0 -z-10 rounded-full bg-[radial-gradient(circle,_rgba(92,107,255,0.28),_rgba(8,14,26,0.85)_68%,_transparent_95%)] blur-3xl" />

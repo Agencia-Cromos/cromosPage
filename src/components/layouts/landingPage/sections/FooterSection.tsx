@@ -7,7 +7,10 @@ import { FooterNavColumn } from "@/components/fragments/landingPage/footer/Foote
 
 export function FooterSection() {
   return (
-    <footer className="border-t border-white/10 bg-[#05080E]  text-white md:py-16">
+    <footer
+      id="footer"
+      className="border-t border-white/10 bg-[#05080E]  text-white md:py-16 pt-6"
+    >
       <Container variant="default" className="mx-auto flex flex-col gap-10">
         <div className="grid gap-8 md:grid-cols-3 md:items-start">
           <FooterBrandColumn />
@@ -19,4 +22,3 @@ export function FooterSection() {
     </footer>
   );
 }
-

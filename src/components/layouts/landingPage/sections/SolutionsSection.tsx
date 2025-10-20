@@ -38,7 +38,7 @@ const fadeUp = (delay: number) => ({
 
 export function SolutionsSection() {
   return (
-    <section className="relative overflow-hidden py-28 sm:py-32">
+    <section id="solutionsSection" className="relative overflow-hidden py-28 sm:py-32">
       {/* Background escuro principal */}
       <div className="absolute inset-0 -z-20 bg-[linear-gradient(165deg,_rgba(5,9,22,0.9)_0%,_rgba(12,20,44,0.85)_40%,_rgba(5,9,22,0.8)_100%)]" />
 

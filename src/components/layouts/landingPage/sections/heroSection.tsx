@@ -8,7 +8,10 @@ import { HeroVisual } from "@/components/fragments/landingPage/hero/HeroVisual";
 
 export function HeroSection() {
   return (
-    <section className="relative flex min-h-screen flex-col overflow-hidden bg-[color:var(--color-bg-dark)] pb-12">
+    <section
+      id="HeroSection"
+      className="relative flex min-h-screen flex-col overflow-hidden bg-[color:var(--color-bg-dark)] pb-12"
+    >
       <AnimatedBackground />
       <HeroVisual />
       <Container

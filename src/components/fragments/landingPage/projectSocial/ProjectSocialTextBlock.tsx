@@ -10,16 +10,16 @@ export function ProjectSocialTextBlock({ onRequestModal }: ProjectSocialTextBloc
           Projeto Social
         </p>
         <h2 className="font-headline text-3xl text-slate-900 sm:text-[2.5rem]">
-          Tecnologia a servico de quem faz a diferenca.
+          Tecnologia a serviço de quem faz a diferença.
         </h2>
         <p className="max-w-xl text-base leading-relaxed text-[color:var(--color-gray-600)] sm:text-lg">
           A Cromos apoia pequenos negocios que precisam iniciar sua jornada digital. Criamos paginas
-          simples, funcionais e sem custo inicial para quem quer modernizar produtos, servicos e
-          processos com proposito.
+          simples, funcionais e sem custo inicial para quem quer modernizar produtos, serviços e
+          processos com propósito.
         </p>
       </div>
       <p className="text-sm text-[color:var(--color-gray-500)]">
-        Selecionamos projetos locais com impacto positivo para cocriar experiencias digitais que
+        Selecionamos projetos locais com impacto positivo para cocriar experiências digitais que
         movimentam a economia e fortalecem a comunidade.
       </p>
       <div>

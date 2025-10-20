@@ -1,18 +1,25 @@
-'use client';
+"use client";
 
 import Link from "next/link";
-import { useEffect, useState } from "react";
+import { MouseEvent, useEffect, useState } from "react";
 import { Container } from "./container";
 import { Logo } from "./logo";
 import { MenuToggle } from "./menu-toggle";
 import { CtaButton } from "./CtaButton";
+import { scrollToSection } from "@/utils/scrollToSection";
 
-const NAV_ITEMS = [
-  { label: "Serviços", href: "#services" },
-  { label: "Projetos", href: "#projects" },
-  { label: "Sobre", href: "#about" },
-  { label: "Projeto Social", href: "#socialProjects" },
-  { label: "Contato", href: "#contact" },
+type NavItem = {
+  label: string;
+  href: string;
+  sectionId?: string;
+};
+
+const NAV_ITEMS: NavItem[] = [
+  { label: "Sobre", href: "/#AboutUsSection", sectionId: "AboutUsSection" },
+  { label: "Servicos", href: "/#solutionsSection", sectionId: "solutionsSection" },
+  { label: "Projetos", href: "/projetos" },
+  { label: "Projeto Social", href: "/#ProjectSocialSection", sectionId: "ProjectSocialSection" },
+  { label: "Contato", href: "/#footer", sectionId: "footer" },
 ];
 
 export function Header() {
@@ -55,9 +62,25 @@ export function Header() {
 
   const closeMenu = () => setMenuOpen(false);
 
+  const handleNavClick = (
+    event: MouseEvent<HTMLAnchorElement>,
+    sectionId?: string,
+    shouldCloseMenu = false,
+  ) => {
+    if (sectionId) {
+      event.preventDefault();
+      scrollToSection(sectionId);
+    }
+
+    if (shouldCloseMenu) {
+      closeMenu();
+    }
+  };
+
   return (
     <>
       <header
+        data-site-header="true"
         className={`fixed inset-x-0 top-0 z-40 transition-all duration-500 ${
           isScrolled || isMenuOpen
             ? "bg-[#0A0E17]/85 backdrop-blur-2xl shadow-[0_12px_60px_rgba(12,20,37,0.55)]"
@@ -81,7 +104,8 @@ export function Header() {
                 <Link
                   key={item.href}
                   href={item.href}
-                  className="transition-colors duration-300 hover:text-white"
+                  onClick={(event) => handleNavClick(event, item.sectionId)}
+                  className="relative py-1 transition-colors duration-300 hover:text-white after:absolute after:left-1/2 after:bottom-0 after:h-[3px] after:w-full after:-translate-x-1/2 after:scale-x-0 after:rounded-full after:bg-[linear-gradient(90deg,_rgba(71,164,255,0.12),_#7AE4FF,_rgba(71,164,255,0.12))] after:shadow-[0_0_0_rgba(122,228,255,0)] after:content-[''] after:transition-all after:duration-300 after:origin-center hover:after:scale-x-100 hover:after:shadow-[0_0_16px_rgba(122,228,255,0.85)]"
                 >
                   {item.label}
                 </Link>
