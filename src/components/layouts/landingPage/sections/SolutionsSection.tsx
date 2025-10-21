@@ -1,5 +1,5 @@
 
-import mockupBackground from "@/assets/mockup_2.png";
+import mockupBackground from "@/assets/mocks/mockup.png";
 import { Container } from "@/components/common/container";
 import { CtaButton } from "@/components/common/CtaButton";
 

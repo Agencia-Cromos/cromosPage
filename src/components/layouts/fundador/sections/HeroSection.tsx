@@ -1,17 +1,44 @@
+"use client";
+
+import { useRef } from "react";
+import { motion, useScroll, useTransform } from "framer-motion";
 import { HeroBackground } from "@/components/fragments/fundador/hero/HeroBackground";
 import { HeroHeading } from "@/components/fragments/fundador/hero/HeroHeading";
 import { HeroActions } from "@/components/fragments/fundador/hero/HeroActions";
+import { HeroPortrait } from "@/components/fragments/fundador/hero/HeroPortrait";
 
 export function HeroSection() {
+  const sectionRef = useRef<HTMLElement | null>(null);
+  const { scrollYProgress } = useScroll({
+    target: sectionRef,
+    offset: ["start start", "end start"],
+  });
+
+  const textOffset = useTransform(scrollYProgress, [0, 1], [0, -160]);
+  const overlayOpacity = useTransform(scrollYProgress, [0, 1], [0.15, 0.7]);
+
   return (
     <section
+      ref={sectionRef}
       id="topo"
-      className="relative overflow-hidden bg-[radial-gradient(circle_at_top,_rgba(76,159,255,0.35),_rgba(10,14,24,0.95)_60%,_rgba(5,8,16,1)_100%)] pt-6 pb-20 sm:pt-28 sm:pb-28 lg:pt-32 lg:pb-32"
+      className="relative overflow-hidden bg-[#050A16]"
     >
+      <HeroPortrait />
       <HeroBackground />
-      <div className="relative mx-auto flex max-w-4xl flex-col items-center text-center text-[color:var(--color-text,#E5E5E5)] px-6">
-        <HeroHeading />
-        <HeroActions />
+      <motion.div
+        aria-hidden
+        style={{ opacity: overlayOpacity }}
+        className="pointer-events-none absolute inset-0 bg-[linear-gradient(180deg,_rgba(5,10,22,0.05)_0%,_rgba(5,10,22,0.45)_45%,_rgba(5,10,22,0.92)_90%)]"
+      />
+
+      <div className="relative z-20 mx-auto flex min-h-[110vh] w-full max-w-5xl flex-col justify-end px-6 pb-24 pt-[28vh] text-left text-white sm:pb-28 sm:pt-[24vh] lg:pb-[120px] lg:pt-[20vh]">
+        <motion.div
+          style={{ y: textOffset }}
+          className="flex flex-col gap-10 rounded-[28px] bg-[#050A16]/45 p-6 backdrop-blur-md sm:p-8 lg:max-w-3xl lg:bg-transparent lg:p-0 lg:backdrop-blur-0"
+        >
+          <HeroHeading />
+          <HeroActions />
+        </motion.div>
       </div>
     </section>
   );

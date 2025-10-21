@@ -1,5 +1,5 @@
 import Image from "next/image";
-import projectMockup from "@/assets/mockup.png";
+import projectMockup from "@/assets/mocks/mockup.png";
 
 export function ProjectSocialIllustration() {
   return (

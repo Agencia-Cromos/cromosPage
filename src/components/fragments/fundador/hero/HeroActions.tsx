@@ -9,7 +9,7 @@ const buttonBase =
 export function HeroActions() {
   return (
     <motion.div
-      className="mt-10 flex flex-col items-center gap-4 sm:flex-row"
+      className="mt-10 flex flex-col items-start gap-4 sm:flex-row sm:items-center sm:justify-start"
       initial={{ opacity: 0, y: 24 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.7, delay: 0.38, ease: "easeOut" }}

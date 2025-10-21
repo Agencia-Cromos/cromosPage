@@ -11,7 +11,7 @@ export function ConnectionBrand() {
       viewport={{ once: true, amount: 0.3 }}
       transition={{ duration: 0.6, ease: "easeOut" }}
     >
-      <Logo className="h-16 w-auto justify-center" />
+      <Logo className="h-16 w-auto justify-center lg:justify-start" />
     </motion.div>
   );
 }
