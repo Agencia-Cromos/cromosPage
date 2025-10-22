@@ -17,8 +17,8 @@ export default function FundadorPage() {
       >
         <HeroSection />
         <AboutSection />
-        <ProjectsSection />
         <KnowledgeSection />
+        <ProjectsSection />
         <ConnectionSection />
         <ContactSection />
         <FooterSection />

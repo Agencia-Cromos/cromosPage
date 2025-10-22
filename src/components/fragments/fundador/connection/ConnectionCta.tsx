@@ -16,7 +16,7 @@ export function ConnectionCta() {
         href="/"
         className="inline-flex items-center justify-center gap-2 rounded-full border border-white/20 bg-white/10 px-6 py-3 text-sm font-semibold text-white transition duration-300 hover:scale-[1.02] hover:border-white/40 hover:bg-white/20 hover:shadow-[0_16px_36px_rgba(255,215,120,0.25)]"
       >
-        Conheca a Chromos -&gt;
+        Conheca a CROMOS -&gt;
       </Link>
     </motion.div>
   );

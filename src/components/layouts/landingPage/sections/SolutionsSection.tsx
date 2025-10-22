@@ -39,10 +39,7 @@ const fadeUp = (delay: number) => ({
 export function SolutionsSection() {
   return (
     <section id="solutionsSection" className="relative overflow-hidden py-28 sm:py-32">
-      {/* Background escuro principal */}
       <div className="absolute inset-0 -z-20 bg-[linear-gradient(165deg,_rgba(5,9,22,0.9)_0%,_rgba(12,20,44,0.85)_40%,_rgba(5,9,22,0.8)_100%)]" />
-
-      {/* Imagem de fundo sobreposta com opacidade baixa */}
       <div
         className="absolute inset-0 -z-10 bg-cover bg-center opacity-10"
         style={{ backgroundImage: `url(${mockupBackground.src})` }}
@@ -95,7 +92,7 @@ export function SolutionsSection() {
               Conheça nossos projetos
             </CtaButton>
             <CtaButton
-              href="/sobre-otavio"
+              href="/fundador"
               variant="secondary"
               className="rounded-xl border-white/20 px-7 py-3 font-semibold text-white/80 hover:text-white"
             >

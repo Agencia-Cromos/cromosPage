@@ -11,7 +11,7 @@ export function HeroHeading() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, delay: 0.1, ease: "easeOut" }}
       >
-        Portfólio do Fundador
+        Portfólio 
       </motion.span>
 
       <motion.h1
@@ -20,7 +20,7 @@ export function HeroHeading() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.7, delay: 0.18, ease: "easeOut" }}
       >
-        Transformo ideias em experiências digitais reais.
+        Transformo ideias em soluções digitais reais.
       </motion.h1>
 
       <motion.p
