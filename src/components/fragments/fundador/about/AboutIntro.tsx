@@ -2,8 +2,11 @@
 
 import { motion } from "framer-motion";
 import { SiElectron, SiNextdotjs, SiReact } from "react-icons/si";
+import { AtlasAudioPlayer } from "@/components/common/AtlasAudioPlayer";
 
 export function AboutIntro() {
+  const atlasAudioSrc = "/audios/Orus_Atlas.wav";
+
   return (
     <motion.div
       className="max-w-3xl text-left"
@@ -17,6 +20,23 @@ export function AboutIntro() {
         Desenvolvo solucoes digitais que conectam pessoas, marcas e ideias. Minha jornada combina tecnologia,
         design e comportamento humano, criando interfaces que resolvem problemas reais e geram resultado.
       </p>
+
+      <div className="mt-6 flex flex-col gap-4 rounded-3xl border border-white/5 bg-white/[0.06] p-4 text-white/80 shadow-[0_16px_36px_rgba(6,10,22,0.35)] backdrop-blur">
+        <span className="text-sm font-semibold uppercase tracking-[0.32em] text-white/60">
+          Atlas, meu assistente de IA, tem algo a dizer
+        </span>
+        <p className="text-sm text-white/75">
+          Aperte o play para ouvir o Atlas se apresentando e entender como ele me acompanha nos projetos.
+        </p>
+        <AtlasAudioPlayer
+          src={atlasAudioSrc}
+          labels={{
+            play: "Reproduzir audio do Atlas",
+            pause: "Pausar audio do Atlas",
+            timeline: "Linha do tempo do audio do Atlas",
+          }}
+        />
+      </div>
 
       <div className="mt-8 flex flex-col gap-3 rounded-3xl border border-white/10 bg-white/[0.04] p-4 shadow-[0_18px_40px_rgba(6,10,22,0.35)] backdrop-blur sm:p-5">
         <span className="text-xs font-semibold uppercase tracking-[0.35em] text-white/60">

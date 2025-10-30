@@ -11,7 +11,7 @@ export function HeroHeading() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, delay: 0.1, ease: "easeOut" }}
       >
-        Portfólio 
+        Portfólio
       </motion.span>
 
       <motion.h1
@@ -20,7 +20,7 @@ export function HeroHeading() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.7, delay: 0.18, ease: "easeOut" }}
       >
-        Transformo ideias em soluções digitais reais.
+        Da idéia ao deploy — entrego interfaces com propósito.
       </motion.h1>
 
       <motion.p
@@ -29,9 +29,10 @@ export function HeroHeading() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.7, delay: 0.28, ease: "easeOut" }}
       >
-        Sou Natã Spitz Alves, desenvolvedor front-end e designer de interfaces. Acredito que tecnologia só faz
-        sentido quando aproxima pessoas. Por isso, dedico meu trabalho a criar soluções digitais sob medida —
-        combinando propósito, estética e estratégia.
+        Sou Natã Spitz Alves, front-end developer especializado em React, Next.js e React Native. 
+        Tenho olhar de designer e mente de estrategista. Gosto de criar produtos digitais que 
+        equilibram estética, usabilidade e resultado, com foco em transformar boas ideias 
+        em soluções sólidas e escaláveis.
       </motion.p>
     </>
   );

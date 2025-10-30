@@ -15,7 +15,7 @@ export function MenuToggle({
       aria-expanded={isOpen}
       aria-label={isOpen ? "Fechar menu" : "Abrir menu"}
       onClick={onToggle}
-      className={`relative inline-flex h-11 w-11 items-center justify-center rounded-full border border-white/20 bg-white/10 text-white backdrop-blur-md transition hover:bg-white/20 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white ${className}`}
+      className={`inline-flex h-11 w-11 items-center justify-center rounded-full border border-white/20 bg-white/10 text-white backdrop-blur-md transition hover:bg-white/20 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white ${className}`}
     >
       <span className="sr-only">{isOpen ? "Fechar menu" : "Abrir menu"}</span>
       <span className="flex h-5 w-6 flex-col justify-between">

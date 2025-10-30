@@ -18,20 +18,19 @@ export function HeroContent() {
   return (
     <div className="relative z-10 mx-auto flex max-w-4xl flex-col items-center gap-10 px-6 text-center md:items-start md:text-left">
       <h1
-        className="text-balance font-headline text-4xl text-white sm:text-6xl md:text-7xl"
+        className="text-balance font-headline text-3xl text-white sm:text-6xl md:text-7xl"
         style={fadeUpStyle("0.2s")}
       >
-        Criamos soluções digitais{" "}
+        Construímos soluções digitais que fazem{" "}
         <span className="text-transparent" style={gradientTextStyle}>
-          sob demanda.
+          empresas evoluírem
         </span>
       </h1>
       <p
         className="max-w-2xl text-balance font-sans text-lg text-[color:var(--color-gray-200)] sm:text-xl"
         style={fadeUpStyle("0.35s")}
       >
-        Na CROMOS, transformamos ideias em tecnologia personalizada para o seu negócio crescer com
-        inovação e propósito.
+        Na CROMOS, criamos e entregamos tecnologia sob medida que transformam visão em resultado real para o seu negócio.
       </p>
       <div
         className="flex flex-col items-center gap-4 sm:flex-row"
