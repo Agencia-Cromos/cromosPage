@@ -15,7 +15,7 @@ export function HeroSection() {
       <AnimatedBackground />
       <HeroVisual />
       <Container
-        variant="narrow"
+        variant="full"
         className=" z-10 flex flex-1 flex-col justify-center gap-16 pt-32 pb-24"
       >
         <HeroContent />

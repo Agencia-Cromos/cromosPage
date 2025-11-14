@@ -2,27 +2,25 @@
 
 import Link from "next/link";
 import { MouseEvent, useEffect, useState } from "react";
+
+import { scrollToSection } from "@/utils/scrollToSection";
+
+import { CtaButton } from "./CtaButton";
 import { Container } from "./container";
 import { Logo } from "./logo";
 import { MenuToggle } from "./menu-toggle";
-import { CtaButton } from "./CtaButton";
-import { scrollToSection } from "@/utils/scrollToSection";
 
-type NavItem = {
+export type HeaderNavItem = {
   label: string;
   href: string;
   sectionId?: string;
 };
 
-const NAV_ITEMS: NavItem[] = [
-  { label: "Sobre", href: "/#AboutUsSection", sectionId: "AboutUsSection" },
-  { label: "Serviços", href: "/#solutionsSection", sectionId: "solutionsSection" },
-  { label: "Projetos", href: "/projetos" },
-  { label: "Projeto Social", href: "/#ProjectSocialSection", sectionId: "ProjectSocialSection" },
-  { label: "Contato", href: "/#footer", sectionId: "footer" },
-];
+type HeaderProps = {
+  navItems: HeaderNavItem[];
+};
 
-export function Header() {
+export function Header({ navItems }: HeaderProps) {
   const [isScrolled, setScrolled] = useState(false);
   const [isMenuOpen, setMenuOpen] = useState(false);
 
@@ -30,6 +28,7 @@ export function Header() {
     const onScroll = () => {
       setScrolled(window.scrollY > 40);
     };
+
     window.addEventListener("scroll", onScroll, { passive: true });
     return () => {
       window.removeEventListener("scroll", onScroll);
@@ -54,6 +53,7 @@ export function Header() {
         setMenuOpen(false);
       }
     };
+
     window.addEventListener("keydown", onKeyDown);
     return () => {
       window.removeEventListener("keydown", onKeyDown);
@@ -100,7 +100,7 @@ export function Header() {
           </div>
           <div className="ml-auto flex h-full items-center gap-3 md:gap-6">
             <nav className="hidden items-center gap-10 text-sm font-medium tracking-wide text-white/80 md:flex">
-              {NAV_ITEMS.map((item) => (
+              {navItems.map((item) => (
                 <Link
                   key={item.href}
                   href={item.href}
@@ -132,11 +132,11 @@ export function Header() {
               className="mx-auto mb-4 h-16 drop-shadow-[0_12px_30px_rgba(15,40,80,0.45)] md:h-20"
             />
             <div className="flex flex-col gap-6 text-lg font-medium">
-              {NAV_ITEMS.map((item) => (
+              {navItems.map((item) => (
                 <Link
                   key={item.href}
                   href={item.href}
-                  onClick={closeMenu}
+                  onClick={(event) => handleNavClick(event, item.sectionId, true)}
                   className="rounded-2xl border border-white/0 bg-white/5 px-5 py-4 text-left tracking-wide transition hover:border-white/30 hover:bg-white/10"
                 >
                   {item.label}
@@ -148,7 +148,7 @@ export function Header() {
               onClick={closeMenu}
               target="_blank"
             >
-              Falar com a gente
+              Entrar em contato
             </CtaButton>
             <button
               type="button"

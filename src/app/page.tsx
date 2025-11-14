@@ -1,4 +1,4 @@
-import { Header } from "@/components/common/Header";
+import { Header, type HeaderNavItem } from "@/components/common/Header";
 import { HeroSection } from "@/components/layouts/landingPage/sections/HeroSection";
 import { AboutSection } from "@/components/layouts/landingPage/sections/AboutSection";
 import { SolutionsSection } from "@/components/layouts/landingPage/sections/SolutionsSection";
@@ -6,11 +6,18 @@ import { TestimonialsSection } from "@/components/layouts/landingPage/sections/T
 import { ProjectSocialSection } from "@/components/layouts/landingPage/sections/ProjectSocialSection";
 import { FooterSection } from "@/components/layouts/landingPage/sections/FooterSection";
 
+const NAV_ITEMS: HeaderNavItem[] = [
+  { label: "Sobre", href: "/#AboutUsSection", sectionId: "AboutUsSection" },
+  { label: "Serviços", href: "/#solutionsSection", sectionId: "solutionsSection" },
+  { label: "Projetos", href: "/projetos" },
+  { label: "Projeto Social", href: "/#ProjectSocialSection", sectionId: "ProjectSocialSection" },
+  { label: "Contato", href: "/#footer", sectionId: "footer" },
+];
 
 export default function Home() {
   return (
     <>
-      <Header />
+      <Header navItems={NAV_ITEMS} />
       <main className="flex min-h-screen flex-col overflow-hidden">
         <HeroSection />
         <AboutSection />

@@ -21,7 +21,7 @@ export function Container({
   children,
 }: ContainerProps) {
   return (
-    <div className={`w-full px-6 sm:px-8 ${variantMap[variant]} ${className}`.trim()}>
+    <div className={`w-full px-6 sm:px-8 ${variantMap[variant]} mx-auto ${className}`.trim()}>
       {children}
     </div>
   );

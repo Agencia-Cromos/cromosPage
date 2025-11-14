@@ -11,7 +11,7 @@ type FooterNavLink = {
 };
 
 const NAV_LINKS: FooterNavLink[] = [
-  { label: "Início", href: "/#HeroSection", sectionId: "HeroSection" },
+  { label: "Inicio", href: "/#HeroSection", sectionId: "AboutUsSection" },
   { label: "Parceiros", href: "/#HeroSection", sectionId: "HeroSection" },
   { label: "Sobre", href: "/#AboutUsSection", sectionId: "AboutUsSection" },
   { label: "Serviços", href: "/#solutionsSection", sectionId: "solutionsSection" },
@@ -22,17 +22,17 @@ const NAV_LINKS: FooterNavLink[] = [
 
 export function FooterNavColumn() {
   const handleNavClick = (event: MouseEvent<HTMLAnchorElement>, sectionId?: string) => {
-    if (!sectionId) return;
-    // Rola suave apenas quando já está na home
-    if (typeof window !== "undefined" && window.location.pathname === "/") {
-      event.preventDefault();
-      scrollToSection(sectionId);
+    if (!sectionId) {
+      return;
     }
+
+    event.preventDefault();
+    scrollToSection(sectionId);
   };
 
   return (
     <nav className="flex flex-col items-center text-center md:items-start md:text-left">
-      <h3 className="font-headline text-white">Navegação</h3>
+      <h3 className="font-headline text-white">Navegacao</h3>
       <ul className="mt-3 flex flex-col items-center gap-2 text-sm md:items-start">
         {NAV_LINKS.map((link) => (
           <li key={link.label}>
@@ -49,3 +49,4 @@ export function FooterNavColumn() {
     </nav>
   );
 }
+
