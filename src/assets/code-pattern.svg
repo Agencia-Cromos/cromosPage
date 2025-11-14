@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="720" viewBox="0 0 1440 720" role="img" aria-labelledby="title desc">
+  <title id="title">Background de tela com HTML</title>
+  <desc id="desc">Fundo escuro simulando monitor com linhas de HTML destacadas em azul.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#010308"/>
+      <stop offset="40%" stop-color="#040913"/>
+      <stop offset="100%" stop-color="#061321"/>
+    </linearGradient>
+    <linearGradient id="glow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="rgba(82,169,255,0.22)"/>
+      <stop offset="100%" stop-color="rgba(96,233,255,0.08)"/>
+    </linearGradient>
+    <linearGradient id="scan" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="rgba(255,255,255,0.12)"/>
+      <stop offset="8%" stop-color="rgba(255,255,255,0)"/>
+      <stop offset="100%" stop-color="rgba(255,255,255,0)"/>
+    </linearGradient>
+    <clipPath id="screen">
+      <rect x="120" y="80" width="1200" height="560" rx="28"/>
+    </clipPath>
+  </defs>
+
+  <rect width="1440" height="720" fill="url(#bg)"/>
+
+  <rect x="120" y="80" width="1200" height="560" rx="28" fill="#02070F" stroke="rgba(120,180,255,0.2)" stroke-width="1.2"/>
+  <rect x="120" y="80" width="1200" height="560" rx="28" fill="url(#glow)" opacity="0.16"/>
+
+  <g clip-path="url(#screen)">
+    <rect x="120" y="80" width="1200" height="560" fill="#050B15" opacity="0.75"/>
+
+    <!-- scanlines -->
+    <g opacity="0.12">
+      <rect x="120" y="92" width="1200" height="12" fill="url(#scan)"/>
+      <rect x="120" y="140" width="1200" height="12" fill="url(#scan)"/>
+      <rect x="120" y="188" width="1200" height="12" fill="url(#scan)"/>
+      <rect x="120" y="236" width="1200" height="12" fill="url(#scan)"/>
+      <rect x="120" y="284" width="1200" height="12" fill="url(#scan)"/>
+      <rect x="120" y="332" width="1200" height="12" fill="url(#scan)"/>
+      <rect x="120" y="380" width="1200" height="12" fill="url(#scan)"/>
+      <rect x="120" y="428" width="1200" height="12" fill="url(#scan)"/>
+      <rect x="120" y="476" width="1200" height="12" fill="url(#scan)"/>
+      <rect x="120" y="524" width="1200" height="12" fill="url(#scan)"/>
+      <rect x="120" y="572" width="1200" height="12" fill="url(#scan)"/>
+    </g>
+
+    <g font-family="'Fira Code', 'Source Code Pro', 'Consolas', monospace" font-size="20" fill="#7EC8FF">
+      <text x="160" y="132" fill="#2F92FF" opacity="0.78">&lt;table width="960" cellpadding="0" cellspacing="0" border="0"&gt;</text>
+      <text x="200" y="168" fill="#6BDFFF">  &lt;tr&gt;</text>
+      <text x="240" y="204">    &lt;td height="48" width="640" colspan="2" class="hero__cell"&gt;</text>
+      <text x="280" y="240" fill="#C7F3FF">      &lt;h1 class="hero__title"&gt;Tecnologia para quem transforma&lt;/h1&gt;</text>
+      <text x="240" y="276">    &lt;/td&gt;</text>
+      <text x="200" y="312" fill="#6BDFFF">  &lt;/tr&gt;</text>
+      <text x="200" y="348" fill="#6BDFFF">  &lt;tr&gt;</text>
+      <text x="240" y="384">    &lt;td width="320" class="hero__form"&gt;</text>
+      <text x="280" y="420">      &lt;form name="lead" method="post" action="/contato"&gt;</text>
+      <text x="320" y="456" fill="#C7F3FF">        &lt;input type="hidden" name="context" value="cromos" /&gt;</text>
+      <text x="320" y="492">        &lt;input type="email" name="email" placeholder="seu melhor email" required /&gt;</text>
+      <text x="320" y="528">        &lt;button type="submit" class="btn btn--primary"&gt;Quero conversar&lt;/button&gt;</text>
+      <text x="280" y="564">      &lt;/form&gt;</text>
+      <text x="240" y="600">    &lt;/td&gt;</text>
+      <text x="240" y="636">    &lt;td width="320" class="hero__meta" align="right"&gt;</text>
+      <text x="280" y="672">      &lt;span class="hero__tag"&gt;Comunidades&lt;/span&gt;</text>
+      <text x="240" y="708">    &lt;/td&gt;</text>
+    </g>
+
+    <g font-family="'Fira Code', monospace" font-size="18" fill="#4A6F9A" opacity="0.8">
+      <text x="128" y="132">12</text>
+      <text x="128" y="168">13</text>
+      <text x="128" y="204">14</text>
+      <text x="128" y="240">15</text>
+      <text x="128" y="276">16</text>
+      <text x="128" y="312">17</text>
+      <text x="128" y="348">18</text>
+      <text x="128" y="384">19</text>
+      <text x="128" y="420">20</text>
+      <text x="128" y="456">21</text>
+      <text x="128" y="492">22</text>
+      <text x="128" y="528">23</text>
+      <text x="128" y="564">24</text>
+      <text x="128" y="600">25</text>
+      <text x="128" y="636">26</text>
+      <text x="128" y="672">27</text>
+      <text x="128" y="708">28</text>
+    </g>
+
+    <g opacity="0.18" stroke="#58B7FF" stroke-width="1.4">
+      <path d="M192 120v588"/>
+      <path d="M228 120v588" opacity="0.5"/>
+      <path d="M164 120v588" opacity="0.35"/>
+    </g>
+  </g>
+</svg>

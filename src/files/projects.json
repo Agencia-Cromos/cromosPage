@@ -1,0 +1,295 @@
+﻿{
+  "version": 1,
+  "lastUpdated": "2025-11-10",
+  "projects": [
+    {
+      "id": "catalogo-artcup-natal",
+      "title": "Catálogo ArtCup – Campanha de Natal",
+      "subtitleMain": "Catálogo inteligente para",
+      "subtitleAccent": "marcas artesanais",
+      "type": "web_app",
+      "status": "Entregue",
+      "objective": "Substituir catálogos em PDF por uma vitrine digital dinâmica com identidade própria e atualização automática por época sazonal.",
+      "descriptionShort": "Mini-ecommerce que adapta cores, banners e produtos conforme a data comemorativa.",
+      "descriptionLong": "Criamos um catálogo digital responsivo que funciona como um mini-ecommerce integrado ao WhatsApp, com automação de campanhas sazonais via IA. O sistema troca banners e cores em datas como Natal, Dia dos Namorados ou Páscoa, mantendo também uma versão padrão entre períodos. A solução serve como primeiro passo para transformar o negócio físico da ArtCup em uma operação online escalável.",
+      "techStack": {
+        "primary": [
+          "Next.js",
+          "TypeScript",
+          "Tailwind CSS"
+        ],
+        "secondary": [
+          "Node.js",
+          "Vercel"
+        ]
+      },
+      "visibility": "public",
+      "links": {
+        "website": "https://exemplo.artcup.com/catalogo-natal"
+      },
+      "media": {
+        "cover": "/images/projects/catalogo-artcup-natal/cover.jpg",
+        "gallery": {
+          "type": "single",
+          "items": [
+            {
+              "src": "/images/projects/catalogo-artcup-natal/desktop.jpg",
+              "alt": "Versão desktop",
+              "orientation": "desktop"
+            },
+            {
+              "src": "/images/projects/catalogo-artcup-natal/mobile.jpg",
+              "alt": "Versão mobile",
+              "orientation": "mobile"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "sistema-cartorio-apostila",
+      "title": "Sistema de Apostilamento – 5º Ofício",
+      "subtitleMain": "Gestão digital de processos para",
+      "subtitleAccent": "cartórios e clientes internacionais",
+      "type": "web_system",
+      "status": "Entregue",
+      "objective": "Centralizar todo o fluxo de apostilamento em uma plataforma única, eliminando trocas manuais por e-mail e WhatsApp, e oferecendo rastreamento completo dos processos.",
+      "descriptionShort": "Sistema multiusuário com controle de processos, chat integrado e painel de produtividade.",
+      "descriptionLong": "Desenvolvemos uma plataforma web completa para o 5º Ofício de Nova Friburgo, unificando a comunicação entre cartório e clientes internacionais. O sistema substitui o uso de WhatsApp, planilhas e e-mails por um fluxo visual em Kanban, com controle de etapas, upload e download de documentos, chat interno e painel de indicadores. Cada usuário tem funções definidas (administrador, gerente, funcionário), com permissões específicas. O módulo financeiro permite acompanhar custos por processo e gerar histórico de cobranças. A estrutura foi desenhada para reduzir o tempo de resposta e aumentar a transparência com clientes.",
+      "techStack": {
+        "primary": [
+          "Next.js",
+          "TypeScript",
+          "Chakra UI"
+        ],
+        "secondary": [
+          "NestJS",
+          "PostgreSQL",
+          "Prisma"
+        ]
+      },
+      "visibility": "public",
+      "links": {
+        "website": "https://sistema.cartorio5oficio.com"
+      },
+      "media": {
+        "cover": "src/assets/projects/5ofc/web/web5ofc_cover.png",
+        "gallery": {
+          "type": "multi",
+          "items": [
+            {
+              "src": "src/assets/projects/5ofc/web/web_login.png",
+              "alt": "Tela de login",
+              "orientation": "desktop"
+            },
+            {
+              "src": "src/assets/projects/5ofc/web/web_dashbooard.png",
+              "alt": "Dashboard principal",
+              "orientation": "desktop"
+            },
+            {
+              "src": "src/assets/projects/5ofc/web/web_kanban.png",
+              "alt": "Kanban de processos",
+              "orientation": "desktop"
+            },
+            {
+              "src": "src/assets/projects/5ofc/web/web_clientes.png",
+              "alt": "Chat interno",
+              "orientation": "desktop"
+            },
+            {
+              "src": "src/assets/projects/5ofc/web/web_financeiro.png",
+              "alt": "Painel financeiro",
+              "orientation": "desktop"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "app-cartorio-apostila",
+      "title": "Aplicativo de Apostilamento – 5º Ofício",
+      "subtitleMain": "Comunicação direta entre",
+      "subtitleAccent": "cartório e clientes",
+      "type": "mobile_app",
+      "status": "Em desenvolvimento",
+      "objective": "Facilitar o acompanhamento de processos e pendências, criando um canal direto entre o cartório e seus clientes B2C e B2B.",
+      "descriptionShort": "Aplicativo integrado ao sistema web, com chat, notificações e histórico de processos.",
+      "descriptionLong": "Aplicativo desenvolvido com React Native e Expo, projetado para integrar-se ao sistema web do cartório. Permite que usuários acompanhem em tempo real o status de apostilamentos, enviem documentos e recebam notificações sobre pendências. O sistema diferencia perfis de cliente mensalista (empresas terceirizadas) e clientes avulsos (pessoas físicas), oferecendo experiências adaptadas. Possui gerenciamento de perfil, listagem de processos ativos e concluídos, histórico detalhado e chat embutido para contato direto com a equipe do cartório.",
+      "techStack": {
+        "primary": [
+          "React Native",
+          "Expo"
+        ],
+        "secondary": [
+          "NestJS",
+          "PostgreSQL"
+        ]
+      },
+      "visibility": "public",
+      "links": {
+        "android": "https://play.google.com/store/apps/details?id=cartorio5oficio",
+        "ios": "https://apps.apple.com/app/id0000000000"
+      },
+      "media": {
+        "cover": "src/assets/projects/5ofc/app/app5ofc_cover.jpeg",
+        "gallery": {
+          "type": "multi",
+          "items": [
+            {
+              "src": "src/assets/projects/5ofc/app/app_profile.jpeg",
+              "alt": "Tela inicial",
+              "orientation": "mobile"
+            },
+            {
+              "src": "src/assets/projects/5ofc/app/app_register.jpeg",
+              "alt": "Tela de registro",
+              "orientation": "mobile"
+            },
+            {
+              "src": "src/assets/projects/5ofc/app/app_chat.jpeg",
+              "alt": "Chat com o cartório",
+              "orientation": "mobile"
+            },
+            {
+              "src": "src/assets/projects/5ofc/app/app_process.jpeg",
+              "alt": "Lista de pendências",
+              "orientation": "mobile"
+            },
+            {
+              "src": "src/assets/projects/5ofc/app/app_details.jpeg",
+              "alt": "Histórico de processos",
+              "orientation": "mobile"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "site-viva-saude",
+      "title": "Viva Saúde – Evento Comunitário de Bem-Estar",
+      "subtitleMain": "Landing page que conecta",
+      "subtitleAccent": "comunidade e saúde",
+      "type": "website",
+      "status": "Entregue",
+      "objective": "Divulgar o evento Viva Saúde, atrair participantes e novos patrocinadores, fortalecendo a identidade comunitária da ação.",
+      "descriptionShort": "Landing page informativa com foco em inscrições, patrocínios e divulgação de atividades do evento.",
+      "descriptionLong": "Criamos uma landing page completa para o evento Viva Saúde, realizado em Lumiar (Nova Friburgo – RJ), reunindo atividades como aulas coletivas de Zumba, Step, Jump e Defesa Pessoal, além de atendimentos gratuitos com nutricionistas e massoterapeutas. O site foi desenvolvido para inspirar engajamento da comunidade, divulgar patrocinadores e facilitar o cadastro de novos apoiadores através de um formulário integrado. O design privilegia leveza visual, vídeos reais do evento e uma estrutura focada em gerar conexão emocional e ação imediata.",
+      "techStack": {
+        "primary": [
+          "Next.js",
+          "TypeScript",
+          "Chakra UI"
+        ],
+        "secondary": [
+          "Vercel",
+          "Formspree"
+        ]
+      },
+      "visibility": "public",
+      "links": {
+        "website": "https://vivasaude.com.br"
+      },
+      "media": {
+        "cover": "src/assets/projects/viva_saude/vivaSaude_cover.png",
+        "gallery": {
+          "type": "single",
+          "items": [
+            {
+              "src": "src/assets/projects/viva_saude/web_viva.png",
+              "alt": "Versão desktop",
+              "orientation": "mock"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "link-bio-natan",
+      "title": "Cartão Digital Pessoal",
+      "subtitleMain": "Cartão de visita interativo em",
+      "subtitleAccent": "HTML puro",
+      "type": "website",
+      "status": "Em desenvolvimento",
+      "objective": "Criar um cartão de visita digital leve e funcional, reunindo todos os links profissionais em uma interface direta e responsiva.",
+      "descriptionShort": "Página em HTML, CSS e JavaScript Vanilla servindo como central de contatos e portfólio.",
+      "descriptionLong": "Projeto minimalista criado para funcionar como um link centralizador pessoal, conectando redes, portfólio, contatos e demais plataformas em um único lugar. Desenvolvido em HTML, CSS e JavaScript puros, o objetivo é demonstrar domínio das linguagens base e criar um cartão digital sem dependências externas. Ideal para redirecionar visitantes das redes sociais e demonstrar domínio técnico essencial.",
+      "techStack": {
+        "primary": [
+          "HTML",
+          "CSS",
+          "JavaScript"
+        ],
+        "secondary": [
+          "GitHub Pages"
+        ]
+      },
+      "visibility": "public",
+      "links": {
+        "website": "https://link.natan.dev"
+      },
+      "media": {
+        "cover": "/images/projects/link-bio-natan/cover.jpg",
+        "gallery": {
+          "type": "single",
+          "items": [
+            {
+              "src": "/images/projects/link-bio-natan/desktop.jpg",
+              "alt": "Versão desktop",
+              "orientation": "desktop"
+            },
+            {
+              "src": "/images/projects/link-bio-natan/mobile.jpg",
+              "alt": "Versão mobile",
+              "orientation": "mobile"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "landing-lehdecore",
+      "title": "LehDecore – Decoração de festas e eventos",
+      "subtitleMain": "Landing page elegante para",
+      "subtitleAccent": "estúdios de decoração",
+      "type": "website",
+      "status": "Em desenvolvimento",
+      "objective": "Criar uma presença digital moderna e profissional para destacar os serviços da LehDecore e gerar novos orçamentos pela internet.",
+      "descriptionShort": "Landing page responsiva com foco em portfólio visual e captação de clientes.",
+      "descriptionLong": "Desenvolvimento de landing page com estética sofisticada e visual inspirado em design de interiores contemporâneo. A página apresenta os principais trabalhos da LehDecore, depoimentos de clientes e formulário de orçamento rápido. O objetivo é posicionar a marca como referência local em decoração personalizada, com uma experiência fluida e foco na conversão. O projeto está em fase final de desenvolvimento, com layout estruturado em seções e preparado para otimização de SEO e futuras integrações.",
+      "techStack": {
+        "primary": [
+          "Next.js",
+          "Tailwind CSS",
+          "TypeScript"
+        ],
+        "secondary": [
+          "Vercel",
+          "Formspree"
+        ]
+      },
+      "visibility": "public",
+      "links": {
+        "website": null
+      },
+      "media": {
+        "cover": "/images/projects/landing-lehdecore/cover.jpg",
+        "gallery": {
+          "type": "single",
+          "items": [
+            {
+              "src": "/images/projects/landing-lehdecore/desktop.jpg",
+              "alt": "Versão desktop",
+              "orientation": "desktop"
+            },
+            {
+              "src": "/images/projects/landing-lehdecore/mobile.jpg",
+              "alt": "Versão mobile",
+              "orientation": "mobile"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}
