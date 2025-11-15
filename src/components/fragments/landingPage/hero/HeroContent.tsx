@@ -16,7 +16,7 @@ const fadeUpStyle = (delay: string): CSSProperties => ({
 
 export function HeroContent() {
   return (
-    <div className="relative z-10 mx-auto flex max-w-4xl flex-col items-center gap-10 px-6 text-center md:items-start md:text-left">
+    <div className="relative z-10 flex max-w-4xl flex-col items-start gap-10 text-left">
       <h1
         className="text-balance font-headline text-3xl text-white sm:text-6xl md:text-7xl"
         style={fadeUpStyle("0.2s")}
@@ -33,7 +33,7 @@ export function HeroContent() {
         Na CROMOS, criamos e entregamos tecnologia sob medida que transformam visão em resultado real para o seu negócio.
       </p>
       <div
-        className="flex flex-col items-center gap-4 sm:flex-row"
+        className="flex flex-col items-stretch gap-4 sm:flex-row sm:items-center"
         style={fadeUpStyle("0.45s")}
       >
         <CtaButton

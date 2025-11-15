@@ -15,9 +15,9 @@ export function HeroVisual() {
         />
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,_rgba(10,18,32,0.72),_rgba(6,12,26,0.5))]" />
       </div>
-      <div className="pointer-events-auto group absolute inset-y-0 right-0 hidden h-full w-[80vw] max-w-[1040px] items-center justify-end lg:flex">
+      <div className="pointer-events-auto group absolute inset-y-0 right-0 hidden h-full w-[90vw] max-w-[1120px] items-center justify-end lg:flex">
         <div className="absolute inset-0 -z-10 rounded-full bg-[radial-gradient(circle,_rgba(92,107,255,0.28),_rgba(8,14,26,0.85)_68%,_transparent_95%)] blur-3xl" />
-        <div className="relative z-10 h-auto w-full max-w-[820px] translate-x-[32%] xl:translate-x-[38%] 2xl:translate-x-[42%]">
+        <div className="relative z-10 h-auto w-full max-w-[820px] translate-x-[14%] xl:translate-x-[18%] 2xl:translate-x-[22%]">
           <Image
             src={earthBg}
             alt="Planeta conectado"
