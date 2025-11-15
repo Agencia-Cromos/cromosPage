@@ -2,6 +2,7 @@
 
 import { useMemo, useState } from "react";
 import Link from "next/link";
+import { useParams } from "next/navigation";
 import projectsData from "@/files/projects.json";
 import { Container } from "@/components/common/container";
 import { PiGlobe, PiAndroidLogo, PiAppleLogo } from "react-icons/pi";
@@ -16,7 +17,8 @@ function isLandingProject(p: Project) {
   return p.id?.startsWith("landing-") || /landing\s?page/i.test(p.title || "");
 }
 
-export default function ProjectDetailPage({ params }: { params: { id: string } }) {
+export default function ProjectDetailPage() {
+  const params = useParams<{ id: string }>();
   const id = decodeURIComponent(params.id);
   const allProjects = (projectsData as { projects: Project[] }).projects || [];
   const project = useMemo(() => allProjects.find((p) => p.id === id) || null, [allProjects, id]);
@@ -27,7 +29,7 @@ export default function ProjectDetailPage({ params }: { params: { id: string } }
     ...(cover ? [{ src: cover, alt: project?.title || "" }] : []),
     ...items,
   ];
-  const isMobileApp = project.type === "mobile_app";
+  const isMobileApp = project?.type === "mobile_app";
   const pages: GalleryItem[][] = useMemo(() => {
     if (!isMobileApp) return slides.map((s) => [s]);
     const grouped: GalleryItem[][] = [];
