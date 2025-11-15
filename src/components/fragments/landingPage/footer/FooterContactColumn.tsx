@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const CONTACT_ITEMS = [
   {
     label: "Telefone",
@@ -28,14 +30,14 @@ export function FooterContactColumn() {
             <span className="text-xs uppercase tracking-[0.24em] text-white/50">
               {item.label}
             </span>
-            <a
+            <Link
               href={item.href}
               target={item.external ? "_blank" : undefined}
               rel={item.external ? "noreferrer" : undefined}
               className="cursor-pointer text-gray-400 transition hover:text-[color:var(--color-primary)]"
             >
               {item.value}
-            </a>
+            </Link>
           </li>
         ))}
       </ul>

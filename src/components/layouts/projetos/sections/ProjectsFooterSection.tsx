@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { Container } from "@/components/common/container";
 import { FooterBottomBar } from "@/components/fragments/landingPage/footer/FooterBottomBar";
 import { FooterBrandColumn } from "@/components/fragments/landingPage/footer/FooterBrandColumn";
@@ -8,13 +9,13 @@ function ProjectsFooterNav() {
       <h3 className="font-headline text-white">Navegação</h3>
       <ul className="mt-3 flex flex-col items-center gap-2 text-sm md:items-start">
         <li>
-          <a href="/" className="text-gray-400 transition hover:text-[color:var(--color-primary)]">Início</a>
+          <Link href="/" className="text-gray-400 transition hover:text-[color:var(--color-primary)]">Início</Link>
         </li>
         <li>
-          <a href="/fundador" className="text-gray-400 transition hover:text-[color:var(--color-primary)]">Portfólio</a>
+          <Link href="/fundador" className="text-gray-400 transition hover:text-[color:var(--color-primary)]">Portfólio</Link>
         </li>
         <li>
-          <a href="/#ProjectSocialSection" className="text-gray-400 transition hover:text-[color:var(--color-primary)]">Projeto Social</a>
+          <Link href="/#ProjectSocialSection" className="text-gray-400 transition hover:text-[color:var(--color-primary)]">Projeto Social</Link>
         </li>
       </ul>
     </nav>
@@ -28,11 +29,11 @@ function ProjectsFooterContact() {
       <ul className="mt-3 flex flex-col gap-3 text-sm text-gray-400">
         <li className="flex flex-col">
           <span className="text-xs uppercase tracking-[0.24em] text-white/50">Email</span>
-          <a href="mailto:cromosagencia@gmail.com" className="hover:text-[color:var(--color-primary)]">cromosagencia@gmail.com</a>
+          <Link href="mailto:cromosagencia@gmail.com" className="hover:text-[color:var(--color-primary)]">cromosagencia@gmail.com</Link>
         </li>
         <li className="flex flex-col">
           <span className="text-xs uppercase tracking-[0.24em] text-white/50">Email (Natã)</span>
-          <a href="mailto:nataspitz81@gmail.com" className="hover:text-[color:var(--color-primary)]">nataspitz81@gmail.com</a>
+          <Link href="mailto:nataspitz81@gmail.com" className="hover:text-[color:var(--color-primary)]">nataspitz81@gmail.com</Link>
         </li>
       </ul>
     </div>

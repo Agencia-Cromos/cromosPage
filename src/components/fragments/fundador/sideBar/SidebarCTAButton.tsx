@@ -31,14 +31,14 @@ export function SidebarCTAButton({
 
   if (external) {
     return (
-      <a
+      <Link
         href={href}
         target="_blank"
         rel="noopener noreferrer"
         className={`${baseClasses} ${layoutClasses}`}
       >
         {content}
-      </a>
+      </Link>
     );
   }
 

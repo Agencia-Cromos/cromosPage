@@ -178,31 +178,31 @@ export default function ProjectDetailPage({ params }: { params: { id: string } }
             {(project.links?.website || project.links?.android || project.links?.ios) && (
               <div className="mt-6 flex flex-wrap gap-3">
                 {project.links?.website && (
-                  <a
+                  <Link
                     href={project.links.website}
                     target="_blank"
                     className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/10 px-4 py-2 text-sm font-semibold text-white hover:bg-white/15"
                   >
                     <PiGlobe /> Visitar site
-                  </a>
+                  </Link>
                 )}
                 {project.links?.android && (
-                  <a
+                  <Link
                     href={project.links.android}
                     target="_blank"
                     className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/10 px-4 py-2 text-sm font-semibold text-white hover:bg-white/15"
                   >
                     <PiAndroidLogo /> Baixar no Android
-                  </a>
+                  </Link>
                 )}
                 {project.links?.ios && (
-                  <a
+                  <Link
                     href={project.links.ios}
                     target="_blank"
                     className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/10 px-4 py-2 text-sm font-semibold text-white hover:bg-white/15"
                   >
                     <PiAppleLogo /> Baixar no iOS
-                  </a>
+                  </Link>
                 )}
               </div>
             )}

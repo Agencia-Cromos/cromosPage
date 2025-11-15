@@ -301,12 +301,12 @@ export function ProjectsHubSection() {
           <p className="text-center text-lg text-white/85">
             Cada projeto é uma prova de que propósito e tecnologia caminham juntos.
           </p>
-          <a
+          <Link
             href="/projetos"
             className="rounded-full border border-white/15 bg-white/10 px-6 py-3 text-sm font-semibold text-white backdrop-blur hover:bg-white/15"
           >
             Ver todos os projetos →
-          </a>
+          </Link>
         </div>
       </Container>
 

@@ -20,13 +20,13 @@ export function HeroActions() {
       >
         Ver meus projetos
       </Link>
-      <a
+      <Link
         href="/curriculo-nata.pdf"
         download
         className={`${buttonBase} border border-white/20 bg-white/10 text-white hover:bg-white/15 hover:shadow-[0_12px_32px_rgba(255,215,120,0.25)]`}
       >
         Baixar currículo
-      </a>
+      </Link>
     </motion.div>
   );
 }

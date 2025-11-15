@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 const CONTACT_ITEMS = [
   {
@@ -33,14 +34,14 @@ export function ContactMethods() {
           transition={{ duration: 0.6, delay: index * 0.07, ease: "easeOut" }}
         >
           <p className="text-xs font-semibold uppercase tracking-[0.32em] text-white/55">{item.label}</p>
-          <a
+          <Link
             href={item.href}
             target={item.href.startsWith("http") ? "_blank" : undefined}
             rel={item.href.startsWith("http") ? "noopener noreferrer" : undefined}
             className="mt-3 block text-base font-medium text-white/90 transition duration-300 hover:text-white"
           >
             {item.value}
-          </a>
+          </Link>
         </motion.div>
       ))}
     </div>
