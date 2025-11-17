@@ -25,7 +25,7 @@
       },
       "visibility": "public",
       "links": {
-        "website": "https://exemplo.artcup.com/catalogo-natal"
+        "website": "www.artcup.com.br"
       },
       "media": {
         "cover": "/images/projects/catalogo-artcup-natal/cover.jpg",
@@ -70,7 +70,7 @@
       },
       "visibility": "public",
       "links": {
-        "website": "https://sistema.cartorio5oficio.com"
+        "website": "https://apostilamento-web-blond.vercel.app/"
       },
       "media": {
         "cover": "src/assets/projects/5ofc/web/web5ofc_cover.png",
@@ -128,8 +128,8 @@
       },
       "visibility": "public",
       "links": {
-        "android": "https://play.google.com/store/apps/details?id=cartorio5oficio",
-        "ios": "https://apps.apple.com/app/id0000000000"
+        "android": "https://play.google.com/store/apps/details?id=br.com.appcartorio5df.apostilamento",
+        "ios": "https://apps.apple.com/gb/app/apostil-na-palma-da-m%C3%A3o/id6742833482#information"
       },
       "media": {
         "cover": "src/assets/projects/5ofc/app/app5ofc_cover.jpeg",
@@ -188,7 +188,7 @@
       },
       "visibility": "public",
       "links": {
-        "website": "https://vivasaude.com.br"
+        "website": "https://viva-nine.vercel.app/"
       },
       "media": {
         "cover": "src/assets/projects/viva_saude/vivaSaude_cover.png",
@@ -248,7 +248,7 @@
       }
     },
     {
-      "id": "landing-lehdecore",
+      "id": "Lehdecore",
       "title": "LehDecore – Decoração de festas e eventos",
       "subtitleMain": "Landing page elegante para",
       "subtitleAccent": "estúdios de decoração",
@@ -270,7 +270,7 @@
       },
       "visibility": "public",
       "links": {
-        "website": null
+        "website": "https://lehdecore.com/"
       },
       "media": {
         "cover": "/images/projects/landing-lehdecore/cover.jpg",
