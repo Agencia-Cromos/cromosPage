@@ -8,6 +8,7 @@ import {
   type KnowledgeSkillType,
 } from "@/components/fragments/fundador/knowledge/knowledgeData";
 import { KnowledgeDetails } from "@/components/fragments/fundador/knowledge/KnowledgeDetails";
+import { SoftSkillCard } from "@/components/fragments/fundador/knowledge/SoftSkillCard";
 
 export function KnowledgeSection() {
   const defaultSkillFilter = KNOWLEDGE_SKILL_OPTIONS[0]?.value ?? "hard";
@@ -142,29 +143,17 @@ export function KnowledgeSection() {
             <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
               {softSkillCards.length ? (
                 softSkillCards.map((card) => (
-                  <article
+                  <SoftSkillCard
                     key={card.id}
-                    className="flex flex-col gap-4 rounded-3xl border border-white/10 bg-white/[0.06] p-5 text-white shadow-[0_18px_45px_rgba(6,10,22,0.35)] transition hover:border-white/25 hover:bg-white/[0.1]"
-                    style={{ boxShadow: `0 18px 45px ${card.color}26` }}
-                  >
-                    <div className="flex items-center justify-between gap-3">
-                      <div className="flex flex-col gap-1">
-                        <span className="text-xs font-semibold uppercase tracking-[0.32em] text-white/60">
-                          {card.title}
-                        </span>
-                        <p className="text-sm text-white/70">{card.description}</p>
-                      </div>
-                      <span className="rounded-full border border-white/20 px-3 py-1 text-xs font-semibold uppercase tracking-[0.3em] text-white/80">
-                        {card.percentage}%
-                      </span>
-                    </div>
-                    <div className="flex items-center justify-between gap-3 text-xs font-semibold uppercase tracking-[0.28em] text-white/55">
-                      <span>
-                        {card.badge} {card.label}
-                      </span>
-                      <span className="text-white/65">{card.classification}</span>
-                    </div>
-                  </article>
+                    id={card.id}
+                    title={card.title}
+                    description={card.description}
+                    color={card.color}
+                    percentage={card.percentage}
+                    badge={card.badge}
+                    label={card.label}
+                    classification={card.classification}
+                  />
                 ))
               ) : (
                 <div className="col-span-full flex flex-col items-center justify-center gap-3 rounded-3xl border border-white/10 bg-white/[0.04] p-6 text-center text-white/70">

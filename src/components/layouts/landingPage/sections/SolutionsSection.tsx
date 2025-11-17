@@ -1,5 +1,3 @@
-import Image from "next/image";
-import type { StaticImageData } from "next/image";
 import mockupBackground from "@/assets/mocks/mockup.png";
 import linkBioMock from "@/assets/mocks/linkBio.png";
 import landingPageMock from "@/assets/mocks/landingPage.png";
@@ -7,6 +5,8 @@ import systemMock from "@/assets/mocks/system.png";
 import appMock from "@/assets/mocks/app.png";
 import { Container } from "@/components/common/container";
 import { CtaButton } from "@/components/common/CtaButton";
+import { SolutionCard } from "@/components/fragments/landingPage/solutions/SolutionCard";
+import type { StaticImageData } from "next/image";
 
 type Solution = {
   title: string;
@@ -120,51 +120,20 @@ export function SolutionsSection() {
         </div>
 
         <ul className="flex w-full flex-col gap-12">
-          {SOLUTIONS.map((solution, index) => {
-            const isImageRight = solution.layout === "image-right";
-            const paddingClass = isImageRight ? "lg:pr-[11rem]" : "lg:pl-[11rem]";
-            const textBlockPosition = isImageRight ? "lg:max-w-[58%]" : "lg:max-w-[58%] lg:ml-auto";
-
-            return (
-              <li
-                key={solution.title}
-                className={`group relative overflow-visible rounded-[32px] bg-gradient-to-br ${solution.backgroundClass} p-8 sm:p-10 shadow-[0_45px_140px_rgba(6,12,32,0.58)] backdrop-blur-3xl transition duration-500 ease-out hover:-translate-y-3 ${paddingClass} ${solution.containerClass}`}
-                style={fadeUp(0.2 + index * 0.1)}
-              >
-                {solution.overlayClass ? (
-                  <div className={`pointer-events-none absolute inset-0 -z-10 ${solution.overlayClass}`} />
-                ) : null}
-
-                <div className="sm:hidden mb-6 flex justify-center">
-                  <Image
-                    src={solution.image.src}
-                    alt={solution.image.alt}
-                    className={`pointer-events-none select-none ${solution.image.mobileClassName}`}
-                    priority={index === 0}
-                  />
-                </div>
-
-                <div className={`relative z-10 flex flex-col gap-5 text-left ${textBlockPosition}`}>
-                  <span className="text-xs font-semibold uppercase tracking-[0.32em] text-white/60">
-                    {String(index + 1).padStart(2, "0")}
-                  </span>
-                  <h3 className="font-headline text-2xl text-white sm:text-[1.7rem]">
-                    <span className="bg-gradient-to-r from-white via-white to-white/70 bg-clip-text text-transparent">
-                      {solution.title}
-                    </span>
-                  </h3>
-                  <p className="text-sm leading-relaxed text-white/70 sm:text-base">{solution.description}</p>
-                </div>
-
-                <Image
-                  src={solution.image.src}
-                  alt={solution.image.alt}
-                  className={`pointer-events-none absolute hidden select-none sm:block ${solution.image.className}`}
-                  priority={index === 0}
-                />
-              </li>
-            );
-          })}
+          {SOLUTIONS.map((solution, index) => (
+            <SolutionCard
+              key={solution.title}
+              index={index}
+              title={solution.title}
+              description={solution.description}
+              image={solution.image}
+              layout={solution.layout}
+              containerClass={solution.containerClass}
+              backgroundClass={solution.backgroundClass}
+              overlayClass={solution.overlayClass}
+              fadeUpStyle={fadeUp}
+            />
+          ))}
         </ul>
 
         <div className="flex flex-col items-center gap-8 pt-12 text-center" style={fadeUp(0.65)}>

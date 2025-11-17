@@ -12,7 +12,7 @@ export function FundadorFooterContent() {
       transition={{ duration: 0.8, ease: "easeOut" }}
     >
       <p>&copy; 2025 Natã Spitz Alves — Desenvolvedor &amp; UX Designer</p>
-      <p>Parte do ecossistema Chromos 🌐</p>
+      <p>Parte do ecossistema Cromos 🌐</p>
     </motion.div>
   );
 }
