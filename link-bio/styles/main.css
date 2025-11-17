@@ -39,6 +39,7 @@ body {
   display: flex;
   align-items: stretch;
   justify-content: center;
+  overflow: hidden;
 }
 
 body::before {

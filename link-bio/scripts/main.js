@@ -63,22 +63,20 @@ async function runIntro() {
 
   const lines = [
     "const profile = {",
-    "  name: 'Natã Spitz Alves',",
+    "  name: 'Nata Spitz Alves',",
     "  role: 'Dev Web & Mobile',",
     "  stack: ['UX/UI', 'IA aplicada'],",
-    "  links: ['Agência', 'Portfólio', 'WhatsApp', 'LinkedIn', 'TikTok']",
+    "  links: ['Agencia', 'Portfolio', 'WhatsApp', 'LinkedIn', 'TikTok']",
     "};",
     "",
     "renderLinkBio(profile);",
   ];
 
-  // Digita o "código" linha a linha
-  // eslint-disable-next-line no-restricted-syntax
   for (let i = 0; i < lines.length; i += 1) {
     // eslint-disable-next-line no-await-in-loop
     await typeText(codeElement, (i === 0 ? "" : "\n") + lines[i], {
-      speed: 32,
-      delay: i === 0 ? 260 : 120,
+      speed: 5,
+      delay: 0,
       append: true,
     });
   }
@@ -88,7 +86,7 @@ async function runIntro() {
     page.classList.add("page-content--visible");
     startHeroTyping().catch(() => {});
     scheduleLinksReveal(500);
-  }, 420);
+  }, 200);
 }
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -101,3 +99,4 @@ document.addEventListener("DOMContentLoaded", () => {
     scheduleLinksReveal(400);
   });
 });
+
