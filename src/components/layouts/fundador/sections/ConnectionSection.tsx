@@ -14,7 +14,7 @@ export function ConnectionSection() {
   return (
     <section
       id="connection"
-      className="relative overflow-hidden bg-[color:var(--color-bg-light,#0F172A)] py-24 sm:py-28"
+      className="relative overflow-hidden bg-[color:var(--color-bg-dark,#050A16)] py-24 sm:py-28"
     >
       <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_center,_rgba(122,228,255,0.18),_rgba(15,20,34,0.95))]" />
       <div className="pointer-events-none absolute -left-[12%] top-[6%] hidden h-[440px] w-[440px] rounded-full bg-[radial-gradient(circle,_rgba(76,159,255,0.22),_transparent_75%)] blur-3xl opacity-70 lg:block" />

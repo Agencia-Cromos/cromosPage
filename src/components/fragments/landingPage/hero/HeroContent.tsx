@@ -44,11 +44,11 @@ export function HeroContent() {
           Falar no WhatsApp
         </CtaButton>
         <CtaButton
-          href="#portfolio"
+          href="#solutionsSection"
           variant="secondary"
           className="w-full sm:w-auto"
         >
-          Conheça nossos clientes
+          Conheça nossos serviços
         </CtaButton>
       </div>
       <HeroPartners id="parceiros" style={fadeUpStyle("0.6s")} />

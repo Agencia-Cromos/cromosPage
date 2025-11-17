@@ -69,12 +69,11 @@ export function KnowledgeSection() {
       <div className="relative mx-auto flex w-full max-w-6xl flex-col gap-16 px-6">
         <header className="mx-auto max-w-3xl text-center text-white">
           <span className="text-xs font-semibold uppercase tracking-[0.4em] text-white/60">
-            Insights tecnicos
+            Insights técnicos
           </span>
-          <h2 className="mt-4 font-headline text-3xl sm:text-4xl">Competencias digitais em movimento</h2>
+          <h2 className="mt-4 font-headline text-3xl sm:text-4xl">Competências digitais em movimento</h2>
           <p className="mt-5 text-sm text-white/65 sm:text-base">
-            Uma visao honesta sobre onde atuo com maior profundidade e quais frentes estou evoluindo. Ideal para
-            recrutadores, lideres tecnicos e parceiros entenderem como posso contribuir desde o primeiro dia.
+            Uma visão honesta sobre onde atuo com maior profundidade e quais frentes estou evoluindo. 
           </p>
         </header>
 

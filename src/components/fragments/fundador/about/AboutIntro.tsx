@@ -17,7 +17,7 @@ export function AboutIntro() {
     >
       <h2 className="font-headline text-3xl text-white sm:text-4xl">Sobre mim</h2>
       <p className="mt-5 text-base text-white/70 sm:text-lg">
-        Desenvolvo solucoes digitais que conectam pessoas, marcas e ideias. Minha jornada combina tecnologia,
+        Desenvolvo soluções digitais que conectam pessoas, marcas e ideias. Minha jornada combina tecnologia,
         design e comportamento humano, criando interfaces que resolvem problemas reais e geram resultado.
       </p>
 
@@ -64,7 +64,7 @@ export function AboutIntro() {
           <div className="flex items-center justify-between gap-3 rounded-2xl border border-white/10 bg-white/[0.03] p-3">
             <div className="flex flex-col gap-1 text-left">
               <span className="text-sm font-semibold text-white/85">React Native</span>
-              <span className="text-xs text-white/55">Apps móveis</span>
+              <span className="text-xs text-white/55">Apps nativos</span>
             </div>
             <span className="flex h-11 w-11 items-center justify-center rounded-full border border-white/10 bg-white/[0.06] shadow-[0_10px_22px_rgba(0,180,216,0.35)]">
               <SiReact className="text-lg text-[#00B4D8]" />

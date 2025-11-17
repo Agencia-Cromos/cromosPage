@@ -1,12 +1,16 @@
+'use client';
+
 import Link from "next/link";
-import type { ReactNode } from "react";
+import type { MouseEventHandler, ReactNode } from "react";
+import { usePathname } from "next/navigation";
+import { useNavigationLoader } from "./NavigationLoader";
 
 type CTAButtonProps = {
   href: string;
   variant?: "primary" | "secondary";
   icon?: ReactNode;
   className?: string;
-  onClick?: () => void;
+  onClick?: MouseEventHandler<HTMLAnchorElement>;
   target?: string;
   rel?: string;
   children: ReactNode;
@@ -32,14 +36,46 @@ export function CtaButton({
   target,
   rel,
 }: CTAButtonProps) {
+  const pathname = usePathname();
+  const navigation = useNavigationLoader();
+
   const computedRel =
     target === "_blank" ? rel ?? "noopener noreferrer" : rel;
+
+  const handleClick: MouseEventHandler<HTMLAnchorElement> = (event) => {
+    if (onClick) {
+      onClick(event);
+    }
+
+    if (!navigation) return;
+
+    const isHashLink = href.startsWith("#");
+    const isExternal =
+      href.startsWith("http://") ||
+      href.startsWith("https://") ||
+      href.startsWith("mailto:") ||
+      href.startsWith("tel:");
+
+    if (isHashLink || isExternal || target === "_blank" || event.defaultPrevented) {
+      return;
+    }
+
+    if (!href.startsWith("/")) {
+      return;
+    }
+
+    if (pathname === href) {
+      return;
+    }
+
+    navigation.startNavigation();
+  };
 
   return (
     <Link
       href={href}
       className={`${baseClasses} ${variantClasses[variant]} ${className}`}
-      onClick={onClick}
+      onClick={handleClick}
       target={target}
       rel={computedRel}
       style={

@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import type { ReactNode } from "react";
+import { useNavigationLoader } from "@/components/common/NavigationLoader";
 
 type SidebarCTAButtonProps = {
   href: string;
@@ -18,6 +19,7 @@ export function SidebarCTAButton({
   showLabel,
   external,
 }: SidebarCTAButtonProps) {
+  const navigation = useNavigationLoader();
   const baseClasses =
     "inline-flex items-center rounded-full border border-white/15 bg-white/[0.08] text-sm font-semibold text-white shadow-[0_16px_40px_rgba(4,8,20,0.45)] transition duration-200 hover:border-white/35 hover:bg-white/15 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white";
   const layoutClasses = showLabel ? "justify-between gap-3 px-4 py-3" : "justify-center gap-0 px-3 py-2";
@@ -43,7 +45,15 @@ export function SidebarCTAButton({
   }
 
   return (
-    <Link href={href} className={`${baseClasses} ${layoutClasses}`}>
+    <Link
+      href={href}
+      className={`${baseClasses} ${layoutClasses}`}
+      onClick={() => {
+        if (navigation && href.startsWith("/") && !href.startsWith("#")) {
+          navigation.startNavigation();
+        }
+      }}
+    >
       {content}
     </Link>
   );

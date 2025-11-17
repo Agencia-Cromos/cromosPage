@@ -9,6 +9,7 @@ import { CtaButton } from "./CtaButton";
 import { Container } from "./container";
 import { Logo } from "./logo";
 import { MenuToggle } from "./menu-toggle";
+import { useNavigationLoader } from "./NavigationLoader";
 
 export type HeaderNavItem = {
   label: string;
@@ -21,6 +22,7 @@ type HeaderProps = {
 };
 
 export function Header({ navItems }: HeaderProps) {
+  const navigation = useNavigationLoader();
   const [isScrolled, setScrolled] = useState(false);
   const [isMenuOpen, setMenuOpen] = useState(false);
 
@@ -70,6 +72,8 @@ export function Header({ navItems }: HeaderProps) {
     if (sectionId) {
       event.preventDefault();
       scrollToSection(sectionId);
+    } else if (navigation) {
+      navigation.startNavigation();
     }
 
     if (shouldCloseMenu) {

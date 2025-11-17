@@ -1,7 +1,7 @@
-
 import type { Metadata } from "next";
 import { Inter, Outfit } from "next/font/google";
 import "./globals.css";
+import { NavigationLoaderProvider } from "@/components/common/NavigationLoader";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -15,7 +15,13 @@ const outfit = Outfit({
 
 export const metadata: Metadata = {
   title: "Agência Cromos",
-  description: "Plataforma oficial da Agência Cromos, a mais tecnologica em softwares sob demanda.",
+  description:
+    "Plataforma oficial da Agência Cromos, a mais tecnológica em softwares sob demanda.",
+  icons: {
+    icon: "/favicon.ico",
+    shortcut: "/favicon.ico",
+    apple: "/favicon.ico",
+  },
 };
 
 export default function RootLayout({
@@ -25,10 +31,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-BR">
-      <body
-        className={`${inter.variable} ${outfit.variable} antialiased`}
-      >
-        {children}
+      <body className={`${inter.variable} ${outfit.variable} antialiased`}>
+        <NavigationLoaderProvider>{children}</NavigationLoaderProvider>
       </body>
     </html>
   );

@@ -10,7 +10,7 @@ type Project = {
 
 const PROJECTS: Project[] = [
   {
-    title: "PSAI-A — Plataforma de Saúde com IA",
+    title: "PSY-IA — Plataforma de Saúde com IA",
     description:
       "Interface para assistente psicológico com IA conversacional e voz. Foco em empatia, UX emocional e fluidez.",
     stack: "Next.js, Chakra UI",
@@ -53,7 +53,7 @@ export function ProjectsShowcase() {
           <div className="absolute inset-x-6 top-6 -z-10 h-32 rounded-3xl bg-[linear-gradient(120deg,_rgba(76,159,255,0.25),_rgba(255,215,120,0.16))] blur-3xl opacity-0 transition group-hover:opacity-100" />
           <h3 className="font-headline text-xl text-white">{project.title}</h3>
           <p className="mt-3 text-sm text-white/65 sm:text-base">{project.description}</p>
-          <p className="mt-5 text-xs font-semibold uppercase tracking-[0.28em] text-[color:var(--color-secondary,#FFD778)]/80">
+          <p className="mt-5 text-xs font-semibold uppercase tracking-[0.28em] text-[color:var(--color-gray,#FFD778)]/80">
             {project.stack}
           </p>
         </motion.article>

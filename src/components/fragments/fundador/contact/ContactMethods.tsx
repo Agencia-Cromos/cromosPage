@@ -16,8 +16,8 @@ const CONTACT_ITEMS = [
   },
   {
     label: "GitHub",
-    value: "github.com/nataspitz",
-    href: "https://github.com/nataspitz",
+    value: "github.com/Nataspitz",
+    href: "https://github.com/Nataspitz",
   },
 ];
 

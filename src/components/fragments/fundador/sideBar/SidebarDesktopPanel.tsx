@@ -38,7 +38,7 @@ export function SidebarDesktopPanel({
         {isOpen ? (
           <div className="flex flex-col gap-1">
             <span className="text-[11px] font-semibold uppercase tracking-[0.45em] text-white/60">Portfolio</span>
-            <span className="text-lg font-semibold text-white">Nat\u00E3 Spitz</span>
+            <span className="text-lg font-semibold text-white">Natã Spitz Alves</span>
           </div>
         ) : (
           <div className="flex h-10 w-10 items-center justify-center rounded-full border border-white/10 bg-white/10 text-sm font-semibold uppercase tracking-[0.4em] text-white/80">

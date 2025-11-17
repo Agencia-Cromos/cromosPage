@@ -44,7 +44,7 @@ export function SidebarMobileDrawer({
             </div>
 
             <div className="flex flex-col gap-4">
-              <p className="text-xs uppercase tracking-[0.35em] text-white/45">Navegacao</p>
+              <p className="text-xs uppercase tracking-[0.35em] text-white/45">Navegação</p>
               <div className="flex flex-col gap-3">
                 {sections.map((section) => (
                   <SidebarSectionButton

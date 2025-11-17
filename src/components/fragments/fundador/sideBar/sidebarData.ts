@@ -8,7 +8,7 @@ export const FUNDADOR_SECTIONS: FundadorSection[] = [
   { id: "about", label: "Sobre" },
   { id: "projects", label: "Projetos" },
   { id: "knowledge", label: "Conhecimentos" },
-  { id: "connection", label: "Conexao" },
+  { id: "connection", label: "Conexão" },
   { id: "contact", label: "Contato" },
 ];
 
