@@ -309,6 +309,13 @@ body::before {
   justify-content: center;
   z-index: 20;
   background:
+    repeating-linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.25) 0,
+      rgba(0, 0, 0, 0.25) 1px,
+      transparent 1px,
+      transparent 3px
+    ),
     radial-gradient(circle at 15% 15%, rgba(76, 159, 255, 0.22), rgba(5, 10, 24, 0.96)),
     radial-gradient(circle at 80% 85%, rgba(255, 215, 120, 0.18), rgba(3, 6, 14, 0.98));
   transition:
@@ -318,12 +325,31 @@ body::before {
 }
 
 .code-intro-inner {
+  position: relative;
   min-width: min(500px, 92vw);
   border-radius: 22px;
   padding: 16px 18px;
   background: radial-gradient(circle at top left, rgba(76, 159, 255, 0.24), rgba(3, 8, 18, 0.98));
   border: 1px solid rgba(255, 255, 255, 0.5);
   box-shadow: 0 28px 90px rgba(4, 10, 22, 0.9);
+  overflow: hidden;
+}
+
+.code-intro-inner::before {
+  content: "";
+  position: absolute;
+  inset: -40%;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.2) 0%,
+    rgba(0, 255, 153, 0.35) 50%,
+    rgba(0, 0, 0, 0.2) 100%
+  );
+  mix-blend-mode: screen;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(-100%);
+  animation: codeScan 2800ms linear infinite;
 }
 
 .code-intro-label {
@@ -339,8 +365,20 @@ body::before {
   font-family: "SFMono-Regular", Menlo, Monaco, Consolas, "Liberation Mono", monospace;
   font-size: 0.85rem;
   line-height: 1.6;
-  color: var(--color-text);
+  color: #9af7c0;
   white-space: pre-wrap;
+  text-shadow:
+    0 0 6px rgba(0, 255, 153, 0.7),
+    0 0 18px rgba(0, 255, 204, 0.35);
+  animation: codeFlicker 2200ms steps(1, end) infinite;
+}
+
+.code-intro-code::after {
+  content: "▌";
+  display: inline-block;
+  margin-left: 2px;
+  opacity: 0.9;
+  animation: caretBlink 840ms steps(1, end) infinite;
 }
 
 .code-intro--hidden {
@@ -378,6 +416,84 @@ body::before {
   100% {
     opacity: 0;
     transform: translateY(100%);
+  }
+}
+
+@keyframes codeFlicker {
+  0%,
+  100% {
+    opacity: 1;
+    text-shadow:
+      0 0 6px rgba(0, 255, 153, 0.7),
+      0 0 18px rgba(0, 255, 204, 0.35);
+  }
+
+  7% {
+    opacity: 0.7;
+  }
+
+  12% {
+    opacity: 1;
+  }
+
+  18% {
+    opacity: 0.4;
+  }
+
+  25% {
+    opacity: 1;
+  }
+
+  32% {
+    opacity: 0.6;
+  }
+
+  45% {
+    opacity: 1;
+  }
+
+  55% {
+    opacity: 0.5;
+  }
+
+  65% {
+    opacity: 1;
+  }
+
+  82% {
+    opacity: 0.8;
+  }
+}
+
+@keyframes codeScan {
+  0% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+
+  20% {
+    opacity: 0.4;
+  }
+
+  70% {
+    opacity: 0.15;
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+}
+
+@keyframes caretBlink {
+  0%,
+  45% {
+    opacity: 0.95;
+  }
+
+  50%,
+  100% {
+    opacity: 0;
   }
 }
 

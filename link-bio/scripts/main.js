@@ -75,7 +75,7 @@ async function runIntro() {
   for (let i = 0; i < lines.length; i += 1) {
     // eslint-disable-next-line no-await-in-loop
     await typeText(codeElement, (i === 0 ? "" : "\n") + lines[i], {
-      speed: 5,
+      speed: 18,
       delay: 0,
       append: true,
     });
@@ -99,4 +99,3 @@ document.addEventListener("DOMContentLoaded", () => {
     scheduleLinksReveal(400);
   });
 });
-
